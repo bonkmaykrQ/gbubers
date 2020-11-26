@@ -43,6 +43,7 @@
     --InputFieldBorderColor:#bd029a;
 	--InputValueColor:#ffffff;
 	--NavPaneBackgroundColor:#85547b;
+    --InputValueBlank:#b883c9;
 	
 	--uhhhhhhhhh:linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,175,0,1) 13%, rgba(255,252,0,1) 22%, rgba(0,255,11,1) 35%, rgba(0,232,255,1) 50%, rgba(29,0,255,1) 68%, rgba(255,0,241,1) 86%, rgba(255,0,0,1) 100%);
 	--bruh:linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,175,0,1) 7%, rgba(255,252,0,1) 14%, rgba(0,255,11,1) 21%, rgba(0,232,255,1) 28%, rgba(29,0,255,1) 35%, rgba(255,0,241,1) 42%, rgba(255,0,0,1) 48%, rgba(255,175,0,1) 55%, rgba(255,252,0,1) 62%, rgba(0,255,11,1) 69%, rgba(0,232,255,1) 76%, rgba(29,0,255,1) 83%, rgba(255,0,241,1) 90%);
@@ -92,6 +93,11 @@ input[type=text], input[type=password], input[type=password], input[type=number]
 	color:var(--InputValueColor);
     border:1px solid;
     border-color:var(--InputFieldBorderColor);
+}
+
+input[type=text]::placeholder, input[type=password]::placeholder, input[type=password]::placeholder, input[type=number]::placeholder, input[type=email]::placeholder, input[type=num]::placeholder, input[type=tel]::placeholder, select::placeholder, .SelectLike::placeholder, option::placeholder, .OptionLike::placeholder, optgroup::placeholder, textarea::placeholder, .TextareaLike::placeholder{
+    /*honestly too lazy to add internet explorer / edge support so fuck you lmao*/
+    color:var(--InputValueBlank);
 }
 
 input[type=text]:hover, input[type=password]:hover, input[type=password]:hover, input[type=number]:hover, input[type=email]:hover, input[type=num]:hover, input[type=tel]:hover, select:hover, .SelectLike:hover, option:hover, .OptionLike:hover, optgroup:hover, textarea:hover, .TextareaLike:hover{
