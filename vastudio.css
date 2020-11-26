@@ -1,0 +1,218 @@
+/*
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
+{ /*Anything pixel art related goes here*/
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    	image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    	image-rendering: -o-crisp-edges;            /* Opera                          */
+    	image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    	image-rendering: pixelated; /* Chrome */
+    	image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    	-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+@font-face{ /* microhard cometSHIT */
+	src:url(https://files.gamebanana.com/bitpit/comic_sans_ms_400.ttf);
+	font-family:SansUndertale;
+}
+
+@font-face{ /* funny fantasy stuff */
+	src:url(https://files.gamebanana.com/bitpit/enchanted_land.otf); 
+    /*replace with Enchanted_land.otf because Ancient was too hard to read in bold*/
+	font-family:Ancient;
+}
+
+:root{
+	--SecondaryNavBackgroundColor: #2e0125;
+	--PrimaryNavBottomBorder: #bd029a;
+	--PrimaryNavBackgroundColor:#450038;
+	--InputFieldColorPrimary:radial-gradient(circle, rgba(35,0,36,1) 0%, rgba(121,9,118,1) 35%, rgba(75,0,75,1) 100%);
+	--InputFieldColorPrimaryHover:radial-gradient(circle, rgba(35,0,36,1) 0%, rgba(29,9,121,1) 35%, rgba(75,0,75,1) 100%);
+	--InputValueColor:#ffffff;
+	--NavPaneBackgroundColor:#85547b;
+	
+	--uhhhhhhhhh:linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,175,0,1) 13%, rgba(255,252,0,1) 22%, rgba(0,255,11,1) 35%, rgba(0,232,255,1) 50%, rgba(29,0,255,1) 68%, rgba(255,0,241,1) 86%, rgba(255,0,0,1) 100%);
+	--bruh:linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,175,0,1) 7%, rgba(255,252,0,1) 14%, rgba(0,255,11,1) 21%, rgba(0,232,255,1) 28%, rgba(29,0,255,1) 35%, rgba(255,0,241,1) 42%, rgba(255,0,0,1) 48%, rgba(255,175,0,1) 55%, rgba(255,252,0,1) 62%, rgba(0,255,11,1) 69%, rgba(0,232,255,1) 76%, rgba(29,0,255,1) 83%, rgba(255,0,241,1) 90%);
+}
+
+.Avatar, .Avatar img{border-radius:50px;box-shadow: 0 0 0 0.125em rgba(0,0,0,0.75);}
+.Avatar.Offline{
+	opacity:0.5;
+}
+.Avatar.Online{
+	opacity:1;
+}
+.Avatar.IsRipeSupporter{ 
+	/*Disables Prettier Ripe borders for consistency's sake*/
+	background-size: 100% !important;
+	animation:none !important;
+	-webkit-animation:none !important;
+	border-radius: 50px !important;
+	
+	box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+}
+.Avatar.Online:after{display:none !important;}
+.Identity .Avatar, .Identity .Avatar img,
+#IdentityModule .Content a,
+#IdentityModule .Content a img{
+	border-radius:0px !important;
+	opacity:1 !important; 
+	/*Revert previous changes on certain elements*/
+}
+
+h1#PageTitle{
+	background:var(--uhhhhhhhhh);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family:Ancient;
+}
+
+h2#PageDescription{
+	background:var(--bruh);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+input[type=text], input[type=password], input[type=password], input[type=number], input[type=email], input[type=num], input[type=tel], select, .SelectLike, option, .OptionLike, optgroup, textarea, .TextareaLike{
+	background:var(--InputFieldColorPrimary);
+	color:var(--InputValueColor);
+}
+
+input[type=text]:hover, input[type=password]:hover, input[type=password]:hover, input[type=number]:hover, input[type=email]:hover, input[type=num]:hover, input[type=tel]:hover, select:hover, .SelectLike:hover, option:hover, .OptionLike:hover, optgroup:hover, textarea:hover, .TextareaLike:hover{
+	background:var(--InputFieldColorPrimaryHover);
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus, input[type=num]:focus, input[type=tel]:focus, select:focus, .SelectLike:focus, option:focus, .OptionLike:focus, optgroup:focus, textarea:focus, .TextareaLike:focus{
+	background:var(--InputFieldColorPrimaryHover);
+}
+
+div.Content{
+	background: url(https://files.gamebanana.com/bitpit/stars2.gif);
+	border: solid 1px deeppink;
+	border-image-source:url(https://files.gamebanana.com/bitpit/b1.png);
+	border-image-slice: 16;
+	border-image-width:16px;
+}
+
+overlay#Headline{
+	background: url(https://files.gamebanana.com/bitpit/briefignorantblackbuck-size_restric.gif);
+	background-attachment:fixed;
+}
+
+
+div#ContentGrid{
+	background:url(https://files.gamebanana.com/bitpit/stripe22.gif);
+}
+
+#MainContentHeader{
+	background:url(https://files.gamebanana.com/bitpit/stripe222.gif);
+}
+
+button.IconButton, button.IconOnlyButton{
+	background: url(https://files.gamebanana.com/bitpit/stars1_03ad7.gif);
+	text-shadow: 0 0 5px white;
+	border:1px solid deeppink;
+	border-radius:20px;
+	transition-duration:0.4s;
+}
+button.IconButton:hover, button.IconOnlyButton:hover{
+	background: url(https://files.gamebanana.com/bitpit/stars1_03ad7.gif);
+	text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white;
+	/*border:3px solid deeppink;
+	margin-top:-2px;
+	margin-left:-2px;*/
+	transition-duration:0.18s;
+}
+
+
+/* v 1.1 */
+select option{background-color: var(--PrimaryNavBottomBorder);}
+
+/* v 1.3 */
+::selection {
+  color: white !important;
+  background: deeppink !important;
+}::-moz-selection {
+  color: white !important;
+  background: deeppink !important;
+}
+
+/* v 1.4 */
+module#ResponsibilitiesModule div.Content dl li{
+	border:none;
+	box-shadow: none;
+	background:none;
+	margin-bottom: -8px;
+}
+
+/* v 1.5 */
+:root{
+    --defaultCursor:        url("https://files.gamebanana.com/bitpit/excalibur_normal.cur"),default !important;
+    --grabCursor:   url("https://files.gamebanana.com/bitpit/excalibur_move.cur"),grab !important;
+    --grabbingCursor:       url("https://files.gamebanana.com/bitpit/excalibur_move.cur"),grabbing !important;
+    --helpCursor:   url("https://files.gamebanana.com/bitpit/excalibur_help.cur"),help !important;
+    --pointerCursor:        url("https://files.gamebanana.com/bitpit/excalibur_link.cur"),pointer !important;
+    --moveCursor:   url('https://files.gamebanana.com/bitpit/excalibur_move.cur') 12 12, move !important;
+}
+
+/* ***********CUSTOM CURSOR CODE BY RING-A-DING RAMPAGE*********** */
+/* ******LIGHTLY ALTERED AND LIKELY BUTCHERED BY YELLOWJELLO****** */
+body,.lg-outer #lg-dropdown-overlay
+{
+        cursor : var(--defaultCursor);
+}
+
+.RichText .Spoiler,#MedalsModule li,.PostsListModule .Posts>li article .PostStamps:hover
+{
+        cursor : var(--helpCursor);
+}
+
+.PostsListModule .Posts>li article .PostStamps li
+{
+        background: #2A0C07;
+}
+
+.PostsListModule .Posts>li article .PostStamps li[data-_sCategory=positive]
+{
+        color: #2BBF26;
+        border-color: #2BBF26;
+}
+
+spriteIcon.MiscIcon.ShowContentIcon, .SpriteIcon.MiscIcon.ShowContentIcon
+{
+        width: 16px;
+        height: 14px;
+        background-position: -64px -256px;
+}
+
+a,.Linklike,button,.ButtonLike,input[type=range]::-webkit-slider-runnable-track,select,.SelectLike,.BeaconParent .Beacon,.ExpandableToggle,.PageModule>.RelatedLinksButton,.MainForm .InputsWrapper .OptionalInput>legend,fieldset#Userid .AdvancedElement_InputSuggestionsList li,.AdvancedListSettingsModule>.Content .OrderAndSortControls fieldset legend,.AdvancedElement_FloatingButtonTabs li,.AdvancedElement_InputSuggestionsList li,.AdvancedElement_Tabs li,.AdvancedElement_GraphicalSelect .OptionsWrapper .Options li,.AdvancedElement_Switch.List ul li,#MasterLog log .CloseButton,.Modal .CloseModal,.Editor .ViewModeSwitchers span,.Editor .WysiwygPalettes>h4,#PrimaryNav controls,#SecondaryNav controls,body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>icon:hover,body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>widget:hover,body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>icon:hover,body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>widget:hover,#HiddenColumnToggleButton,#AlertsNavModule pane .Controls .MarkAllAsSeen,#ActivityNavModule pane .Controls .MarkAllAsSeen,#AlertsNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper,#ActivityNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper,#GamesNavModule widget ul li,#BuddiesNavModule pane #BuddyChatInitiators li,.RichText .TableOfContents ul li,#FeaturesSliderModule .Slides .Slide,#FeaturesSliderModule .Slides .ExpandedSlide,#FeaturesSliderModule .Slides .Slide .Info .Name,#FeaturesSliderModule .Slides .ExpandedSlide .Info .Name,#SubmissionsListAdvancedListSettingsModule .RecentGames li,#SubmissionsListAdvancedListSettingsModule .SelectedGames li,#ThanksToggleModule .Content #ShowThanksOptionsToggle.ModalLauncher,#UpdatesModule .ToggleContentButton,.lg-actions .lg-next,.lg-actions .lg-prev,.lg-toolbar .lg-icon,.lg-outer .lg-thumb-item,.lg-outer .lg-toogle-thumb,.lg-outer .lg-video .lg-video-play,.lg-outer .lg-pager-cont
+{
+        cursor : var(--pointerCursor);
+}
+
+/* ***********END CUSTOM CURSOR CODE*********** */
+
+/* v 1.6 */
+::-webkit-scrollbar-track {
+  background: var(--PrimaryNavBackgroundColor) !important;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--SecondaryNavBackgroundColor) !important;
+  border-radius:0px !important;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--PrimaryNavBottomBorder) !important;
+}

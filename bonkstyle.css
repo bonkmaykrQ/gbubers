@@ -1,0 +1,366 @@
+.Avatar.IsRipeSupporter,
+module#IdentityModule > div.Content > canvas,
+module#SubmitterModule > div.Content > canvas
+{
+    background-color: #ffffff; /*Fallback to White if the animations don't work*/
+        /*linear-gradient(0deg, #ff0000, #f9ff00, #00ff42, #0081ff, #fd00ff, #0081ff, #00ff42, #f9ff00, #ff0000);*/
+    background-size: 3200% 3200%;
+       
+        -webkit-box-shadow: 0px 0px 9px 9px #fc0303;
+        -moz-box-shadow: 0px 0px 9px 9px #fc0303;
+        box-shadow: 0px 0px 9px 9px #fc0303;
+
+    -webkit-animation: RipeAvatarBorder_Flash 2s linear infinite;
+    -moz-animation: RipeAvatarBorder_Flash 2s linear infinite;
+    -o-animation: RipeAvatarBorder_Flash 2s linear infinite;
+    animation: RipeAvatarBorder_Flash 2s linear infinite;
+}
+
+@-webkit-keyframes RipeAvatarBorder_Flash {
+    0%{background-color:#fc0303;box-shadow:0px 0px 9px 9px #fc0303;}
+        20%{background-color:#fff203;box-shadow:0px 0px 9px 9px #fff203;}
+    40%{background-color:#03ff31;box-shadow:0px 0px 9px 9px #03ff31;}
+        60%{background-color:#0364ff;box-shadow:0px 0px 9px 9px #0364ff;}
+    80%{background-color:#ff03ff;box-shadow:0px 0px 9px 9px #ff03ff;}
+        100%{background-color:#fc0303;box-shadow:0px 0px 9px 9px #fc0303;}
+}
+@-moz-keyframes RipeAvatarBorder_Flash {
+    0%{background-color:#fc0303;box-shadow:0px 0px 9px 9px #fc0303;}
+        20%{background-color:#fff203;box-shadow:0px 0px 9px 9px #fff203;}
+    40%{background-color:#03ff31;box-shadow:0px 0px 9px 9px #03ff31;}
+        60%{background-color:#0364ff;box-shadow:0px 0px 9px 9px #0364ff;}
+    80%{background-color:#ff03ff;box-shadow:0px 0px 9px 9px #ff03ff;}
+        100%{background-color:#fc0303;box-shadow:0px 0px 9px 9px #fc0303;}
+}
+@-o-keyframes RipeAvatarBorder_Flash {
+    0%{background-color:#fc0303;box-shadow:0px 0px 9px 9px #fc0303;}
+        20%{background-color:#fff203;box-shadow:0px 0px 9px 9px #fff203;}
+    40%{background-color:#03ff31;box-shadow:0px 0px 9px 9px #03ff31;}
+        60%{background-color:#0364ff;box-shadow:0px 0px 9px 9px #0364ff;}
+    80%{background-color:#ff03ff;box-shadow:0px 0px 9px 9px #ff03ff;}
+        100%{background-color:#fc0303;box-shadow:0px 0px 9px 9px #fc0303;}
+}
+@keyframes RipeAvatarBorder_Flash {
+    0%{background-color:#fc0303;box-shadow:0px 0px 9px 9px #fc0303;}
+        20%{background-color:#fff203;box-shadow:0px 0px 9px 9px #fff203;}
+    40%{background-color:#03ff31;box-shadow:0px 0px 9px 9px #03ff31;}
+        60%{background-color:#0364ff;box-shadow:0px 0px 9px 9px #0364ff;}
+    80%{background-color:#ff03ff;box-shadow:0px 0px 9px 9px #ff03ff;}
+        100%{background-color:#fc0303;box-shadow:0px 0px 9px 9px #fc0303;}
+}
+
+/* Add borders to Cubatars */
+module#IdentityModule > div.Content > canvas,
+module#SubmitterModule > div.Content > canvas
+{
+    border:5px solid;
+    border-color:white;
+/*linear-gradient(0deg, rgba(255,0,236,1) 0%, rgba(0,255,218,1) 49%, rgba(236,255,0,1) 76%, rgba(255,0,0,1) 100%);*/
+}
+
+/**************************************************************************************
+*** This program is free software: you can
+*** redistribute it and/or modify it under the terms of the
+*** GNU General Public License as published by the Free Software Foundation,
+*** either version 3 of the License, or (at your option) any later version.
+***
+*** This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+*** without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+*** See the GNU General Public License for more details.
+***
+*** You should have received a copy of the GNU General Public License along with this program.
+*** If not, see http://www.gnu.org/licenses/.
+***************************************************************************************/
+
+@font-face {
+  font-family: thanksValkie;
+  src: url(https://files.gamebanana.com/bitpit/sansation_light.ttf);
+}
+
+@font-face {
+  font-family: anuscheese;
+  src: url(https://files.gamebanana.com/bitpit/nikkyousans-b6av.ttf);
+}
+
+@font-face {
+  font-family: fuckYouBankie;
+  src: url(https://files.gamebanana.com/bitpit/unispace_bd.ttf);
+}
+
+@font-face {
+        font-family: UwUmommy;
+        src: url(https://files.gamebanana.com/bitpit/sansation_bold_fd334.ttf);
+}
+
+@font-face {
+        font-family: fuckYouDad;
+        src: url(https://files.gamebanana.com/bitpit/exo2-variablefont_wght.ttf);
+}
+
+img.Upic {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+25,000000+50,000000+75,000000+75&0+0,1+25,1+75,0+100 */
+        background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 50%, rgba(0,0,0,1) 75%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 75%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,1) 25%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 75%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+}
+
+.PageModule {
+        margin:0; /*Experimental. Removes those pesky gaps of brighter blue between sections.*/
+}
+
+#PortfolioModule recordCell.Identifiers/*.Name*/ {
+        text-shadow: 4px 4px 3px #000000;
+        bottom: 2em;
+}
+
+#PageTitle {
+        display: flex;
+        justify-content: center;
+}
+
+#GbLogo { /*this was apparently supposed to fix some glitch, but i was forced to remove it by some salty child. thank god i know what it does now.*/
+    display: none;
+}
+
+.Content {
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#01418e+0,001699+50,01418e+100&1+0,0+10,0+90,1+100 */
+        background: -moz-linear-gradient(left,  rgba(1,65,142,1) 0%, rgba(1,56,144,0) 10%, rgba(0,22,153,0) 50%, rgba(1,56,144,0) 90%, rgba(1,65,142,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  rgba(1,65,142,1) 0%,rgba(1,56,144,0) 10%,rgba(0,22,153,0) 50%,rgba(1,56,144,0) 90%,rgba(1,65,142,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  rgba(1,65,142,1) 0%,rgba(1,56,144,0) 10%,rgba(0,22,153,0) 50%,rgba(1,56,144,0) 90%,rgba(1,65,142,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01418e', endColorstr='#01418e',GradientType=1 ); /* IE6-9 */
+}
+
+module {
+        border: 2px #5585ff;
+        background: #012391;
+}
+
+.TitleOnly {
+        font-family: anuscheese;
+}
+
+/*column {
+        background: #012391;
+}*/
+
+/*Fixes an issue on mobile devices where sidebars on submissions and etc. are not colored properly
+**and will use the default GB grid background
+*/
+.xs-h .xs-uh-11 .sm-h .sm-uh-6 .sm-uh-8 .md-4 .md-h .lg-3{
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3068c9+0,001699+16 */
+        background: rgb(48,104,201); /* Old browsers */
+        background: -moz-linear-gradient(left,  rgba(48,104,201,1) 0%, rgba(0,22,153,1) 16%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  rgba(48,104,201,1) 0%,rgba(0,22,153,1) 16%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  rgba(48,104,201,1) 0%,rgba(0,22,153,1) 16%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3068c9', endColorstr='#001699',GradientType=1 ); /* IE6-9 */
+}
+
+/* DISABLED: Causes problems with the fonts on subnav.
+span {
+        font-family: fuckYouDad;
+}
+*/
+
+a, h3 {
+        font-family: anuscheese;
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */      
+}
+
+h3 {
+        font-family: anuscheese;
+        border: 0px solid;
+        border-bottom: 2px solid #5585ff;
+        background: #012391;
+}
+
+/* shitty color thing that dont work
+button {
+        color: #ffffff;
+}*/
+
+.MemberLink{
+        font-family: fuckYouBankie;
+}
+
+:root
+{
+        --AdvancedElementTabsBorderColor:       linear-gradient(to bottom, #7D5A1A, #6D4F16, #604513);
+        --BodyBackground:       url("https://files.gamebanana.com/bitpit/gw_bg.png") no-repeat;
+        --BodyWrapperBackground:        rgba(53,32,32,0.2);
+        --ButtonBackground:     linear-gradient(to bottom, #003e8a, #002010);
+        --ButtonFontFamily:     fuckYouBankie, monospace;
+        --ButtonHoverBackgroundColor:   linear-gradient(to bottom, #0373fc, #003e8a);
+        --InputBackgroundColor: linear-gradient(to bottom, #003e8a, #002010);
+        --InputHoverBackgroundColor:    linear-gradient(to bottom, #0373fc, #003e8a);
+        --InputFocusBackgroundColor:    #0373fc;
+        --LinkHoverColor:       #ffffff;
+                --ModuleTitleFontFamily:        anuscheese;
+        --MasterLogBackgroundColor:     linear-gradient(to bottom, #7D5A1A, #6D4F16, #604513);
+        --NavPaneBackgroundColor:       linear-gradient(to bottom, #003e8a, #0373fc);
+        --StateLabelBackground: #221A1A;
+        --SubNavigatorActiveTabBorderColor:     #6B4E16;
+        --SubNavigatorBorderColor:      linear-gradient(to bottom, #003e8a, #0373fc);
+        --SubNavigatorDropdownBackgroundColor:  #250A06;
+        --SubNavigatorActiveTabBorderColor:     #6B4E16;
+        --StateLabelBackground: #221A1A;
+}
+
+body
+{
+        background: url("https://files.gamebanana.com/bitpit/hrbxpo_1_.jpg") fixed no-repeat top center, #000000;
+}
+
+#BananaNavModule widget a:after
+{
+        content: url("https://statics.gamebanana.com/static/img/logo.png"); /*content: url("https://files.gamebanana.com/bitpit/20200826_030509.png");*/
+}
+
+#PrimaryNav
+{
+        height: 65px;
+        background: #012391;
+}
+
+#SecondaryNav
+{
+        background: #012391;
+}
+
+#SecondaryNav:hover
+{
+        background: #012391;
+}
+
+#ContentGrid row, #ContentGrid row>column, #MessagesNavModule pane #BuddyChatPromoColumn
+{
+        background: #012391;
+}
+
+#SubNavigator
+{
+        background: #000c47;
+        border-bottom-color: #0390fc;
+        -webkit-user-select: none;  /* Chrome all / Safari all */
+        -moz-user-select: none;     /* Firefox all */
+        -ms-user-select: none;      /* IE 10+ */
+        user-select: none;          /* Likely future */  
+}
+
+#stateLabel
+{
+        background: #221A1A;
+}
+
+#HeadlineWrapper overlay
+{
+        background: rgba(0, 115, 255,0.2);
+}
+
+#HeadlineWrapper overlay h1
+{
+        background: linear-gradient(to bottom, #d4dbff, #8095ff);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        text-shadow: none;
+                font-family: anuscheese;
+}
+
+#BuddiesModule h3,#MedalsModule h3,#ResponsibilitiesModule h3
+{
+        text-align: left;
+}
+
+#MedalsModule,#ResponsibilitiesModule,#BuddiesModule
+{
+        text-align: center;
+}
+
+#ResponsibilitiesModule li
+{
+        box-shadow: 1px 1px #000;
+}
+
+/* seriously fuck whoever put this here
+input[type=text],input[type=password],input[type=password],input[type=number],input[type=email],input[type=num],input[type=tel],select, .SelectLike,option,.OptionLike,optgroup,textarea,.TextareaLike,.MainForm fieldset .UploadedFiles li
+{
+        background: #240B04;
+}
+
+input[type=password]:hover,input[type=text]:focus
+{
+        background: #4D1709;
+}*/
+
+form
+{
+        background: #0F0B0B;
+}
+
+a, button.IconButton span
+{
+        color: #d0d0d0;
+}
+
+a:hover
+{
+        color: #0fffaf;
+}
+
+.ExtendedContentButton
+{
+        background:linear-gradient(to bottom, #003e8a, #0373fc);
+        color: #90DFDF
+}
+
+#PageFooter
+{
+        background: #012391;
+}
+nd: rgba(131,70,5,0.2);
+}
+
+nd: rgba(131,70,5,0.2);
+}
+over
+{
+        color: #DFA424;
+}
+
+.ExtendedContentButton
+{
+        background:linear-gradient(to bottom, #003e8a, #0373fc);
+        color: #90DFDF
+}
+
+#PageFooter
+{
+        background: #012391;
+}
+
+/* Animated Online Indicator */
+
+@keyframes animations {
+        0% {border: 1px solid #000;}
+        25% {border: 1px solid #6EE16C;}
+        50% {border : 1px solid #000;}
+        75% {border : 1px solid #6EE16C;}
+        100% {border : 1px solid #000;}
+}
+
+.Avatar.Online:after, .MemberLink.Online:after {
+    background: #6EE16C;
+    box-shadow: 0 0 5px #6EE16C;
+    animation-name: animations;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-direction: alternate;
+}
+
+/*End Script*/
+/*By Evolution 1 No Copyrights*/
