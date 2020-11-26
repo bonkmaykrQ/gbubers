@@ -228,3 +228,9 @@ a,.Linklike,button,.ButtonLike,input[type=range]::-webkit-slider-runnable-track,
 ::-webkit-scrollbar-thumb:hover {
   background: var(--PrimaryNavBottomBorder) !important;
 }
+
+/* i stopped tracking version numbers here. *
+ * refer to github repo for version history */
+div.PostReplies module div.Content ul.Posts li.Post{
+    padding:5px;
+}
