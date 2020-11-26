@@ -38,8 +38,9 @@
 	--SecondaryNavBackgroundColor: #2e0125;
 	--PrimaryNavBottomBorder: #bd029a;
 	--PrimaryNavBackgroundColor:#450038;
-	--InputFieldColorPrimary:radial-gradient(circle, rgba(35,0,36,1) 0%, rgba(121,9,118,1) 35%, rgba(75,0,75,1) 100%);
-	--InputFieldColorPrimaryHover:radial-gradient(circle, rgba(35,0,36,1) 0%, rgba(29,9,121,1) 35%, rgba(75,0,75,1) 100%);
+	--InputFieldColorPrimary:#450038;
+	--InputFieldColorPrimaryHover:#5f4169;
+    --InputFieldBorderColor:#bd029a;
 	--InputValueColor:#ffffff;
 	--NavPaneBackgroundColor:#85547b;
 	
@@ -89,6 +90,8 @@ h2#PageDescription{
 input[type=text], input[type=password], input[type=password], input[type=number], input[type=email], input[type=num], input[type=tel], select, .SelectLike, option, .OptionLike, optgroup, textarea, .TextareaLike{
 	background:var(--InputFieldColorPrimary);
 	color:var(--InputValueColor);
+    border:1px solid;
+    border-color:var(--InputFieldBorderColor);
 }
 
 input[type=text]:hover, input[type=password]:hover, input[type=password]:hover, input[type=number]:hover, input[type=email]:hover, input[type=num]:hover, input[type=tel]:hover, select:hover, .SelectLike:hover, option:hover, .OptionLike:hover, optgroup:hover, textarea:hover, .TextareaLike:hover{
