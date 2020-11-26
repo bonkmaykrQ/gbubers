@@ -113,8 +113,12 @@ overlay#Headline{
 }
 
 
-div#ContentGrid{
+body{
 	background:url(https://files.gamebanana.com/bitpit/stripe22.gif);
+}
+
+wrapper#BodyWrapper{
+    background:transparent;
 }
 
 #MainContentHeader{
