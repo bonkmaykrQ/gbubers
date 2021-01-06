@@ -1,0 +1,113 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+
+@font-face {
+	font-family:cyberpunk;
+	src:url("https://files.gamebanana.com/bitpit/cyberpunk.otf");
+}
+
+@font-face {
+	font-family:goodtimes;
+	src:url("https://files.gamebanana.com/bitpit/good_times_rg.ttf");
+}
+
+:root {
+	--ModuleTitleFontFamily:cyberpunk;
+	--ModuleTitleFontSize:24px;
+	--NavPaneBackgroundColor:linear-gradient(0deg, rgba(73,22,25,1) 0%, rgba(85,26,29,1) 37%, rgba(129,39,45,1) 74%, rgba(168,50,58,1) 100%);
+	--PrimaryNavBackgroundColor:rgba(255, 255, 0, 1.0);
+	--SecondaryNavBackgroundColor:rgba(255, 255, 0, 1.0);
+	--SubNavigatorBorderColor:#0089ff;
+	--BodyWrapperBackground:linear-gradient(0deg, rgba(73,22,25,0.9) 0%, rgba(85,26,29,0.9) 37%, rgba(129,39,45,0.9) 74%, rgba(168,50,58,0.9) 100%) no-repeat fixed center;
+	--InputBackgroundColor:rgba(41, 196, 196, 0.8);
+	--InputTextColor:#ffffff;
+}
+
+img#GbLogo{
+	content:url("https://files.gamebanana.com/bitpit/download.webp");
+	width: 200px;
+	height: 50px;
+}
+
+nav#SecondaryNav wrapper module pane{
+	
+}
+
+module div.Content{
+	background-color:rgba(168, 50, 58, 0.8);
+	border-radius: 0px 0px 0px 0px; /*tl, tr, br, bl*/
+	/*was going to use this to simulate the angled corners of Cyberpunk's ingame UI, but that would require some complex techniques I'm not ready to try yet.*/
+	border:1px solid #d64b4b;
+}
+
+h3, h4, h5, h6 {
+	font-family:goodtimes;
+}
+
+h1, h2 {
+	font-family:cyberpunk;
+	color:#eaff00;
+	text-shadow:5px 5px 0px #000000;
+}
+
+p, div, span {
+	color:white;
+	text-shadow:1px 1px 0px #000000;
+}
+
+a {
+	color:#ff335f;
+	text-shadow:1px 1px 0px #000000;
+}
+
+a:hover {
+	color:#f598ac;
+	text-shadow:3px 3px 0px #ba1c3e;
+}
+
+button	{
+	background:#ff335f;
+	color:white;
+	text-shadow:1px 1px 0px #ba1c3e
+}
+
+button:hover	{
+	background:#df132f;
+	color:white;
+	text-shadow:1px 1px 0px #ba1c3e
+}
+
+wrapper#HeadlineWrapper{
+	background:url("https://files.gamebanana.com/bitpit/1096896.jpg");
+}
+
+body {
+	background: rgb(73,22,25);
+	background: url("https://files.gamebanana.com/bitpit/d7p_yldx4aavjwo.jpg_large");
+	background-attachment:fixed;
+}
+
+::selection{background: yellow;color:black;}::-moz-selection{background: yellow;color:black;}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #27b3b3;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffff00;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dddd00;
+}
