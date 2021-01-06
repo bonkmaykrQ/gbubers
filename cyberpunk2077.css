@@ -111,3 +111,27 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #dddd00 !important;
 }
+
+/*Cursors*/
+:root{
+    --defaultCursor:        url("https://files.gamebanana.com/bitpit/aero_arrow_yellow_cyan.cur"),default !important;
+    --grabCursor:   url("https://files.gamebanana.com/bitpit/aero_move_yellow_cyan.cur"),grab !important;
+    --grabbingCursor:       url("https://files.gamebanana.com/bitpit/aero_move_yellow_cyan.cur"),grabbing !important;
+    --helpCursor:   url("https://files.gamebanana.com/bitpit/aero_link_yellow_cyan.cur"),help !important;
+    --pointerCursor:        url("https://files.gamebanana.com/bitpit/aero_link_yellow_cyan.cur"),pointer !important;
+    --moveCursor:   url('https://files.gamebanana.com/bitpit/aero_move_yellow_cyan.cur') 12 12, move !important;
+}
+body,.lg-outer #lg-dropdown-overlay
+{
+        cursor : var(--defaultCursor);
+}
+
+.RichText .Spoiler,#MedalsModule li,.PostsListModule .Posts>li article .PostStamps:hover
+{
+        cursor : var(--helpCursor);
+}
+
+a,.Linklike,button,.ButtonLike,input[type=range]::-webkit-slider-runnable-track,select,.SelectLike,.BeaconParent .Beacon,.ExpandableToggle,.PageModule>.RelatedLinksButton,.MainForm .InputsWrapper .OptionalInput>legend,fieldset#Userid .AdvancedElement_InputSuggestionsList li,.AdvancedListSettingsModule>.Content .OrderAndSortControls fieldset legend,.AdvancedElement_FloatingButtonTabs li,.AdvancedElement_InputSuggestionsList li,.AdvancedElement_Tabs li,.AdvancedElement_GraphicalSelect .OptionsWrapper .Options li,.AdvancedElement_Switch.List ul li,#MasterLog log .CloseButton,.Modal .CloseModal,.Editor .ViewModeSwitchers span,.Editor .WysiwygPalettes>h4,#PrimaryNav controls,#SecondaryNav controls,body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>icon:hover,body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #SecondaryNav module>widget:hover,body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>icon:hover,body[data-_sDeviceType=desktop][data-_sNavItemActivation=Click] #PrimaryNav module>widget:hover,#HiddenColumnToggleButton,#AlertsNavModule pane .Controls .MarkAllAsSeen,#ActivityNavModule pane .Controls .MarkAllAsSeen,#AlertsNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper,#ActivityNavModule pane .Broadcasts .Unseen .BroadcastStatusWrapper,#GamesNavModule widget ul li,#BuddiesNavModule pane #BuddyChatInitiators li,.RichText .TableOfContents ul li,#FeaturesSliderModule .Slides .Slide,#FeaturesSliderModule .Slides .ExpandedSlide,#FeaturesSliderModule .Slides .Slide .Info .Name,#FeaturesSliderModule .Slides .ExpandedSlide .Info .Name,#SubmissionsListAdvancedListSettingsModule .RecentGames li,#SubmissionsListAdvancedListSettingsModule .SelectedGames li,#ThanksToggleModule .Content #ShowThanksOptionsToggle.ModalLauncher,#UpdatesModule .ToggleContentButton,.lg-actions .lg-next,.lg-actions .lg-prev,.lg-toolbar .lg-icon,.lg-outer .lg-thumb-item,.lg-outer .lg-toogle-thumb,.lg-outer .lg-video .lg-video-play,.lg-outer .lg-pager-cont
+{
+        cursor : var(--pointerCursor);
+}
