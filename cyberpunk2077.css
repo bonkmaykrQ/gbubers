@@ -44,7 +44,7 @@ nav#SecondaryNav wrapper module pane{
 	
 }
 
-module div.Content{
+module div.Content, wrapper ul li{
 	background-color:rgba(168, 50, 58, 0.8);
 	border-radius: 0px 0px 0px 0px; /*tl, tr, br, bl*/
 	/*was going to use this to simulate the angled corners of Cyberpunk's ingame UI, but that would require some complex techniques I'm not ready to try yet.*/
@@ -76,13 +76,13 @@ a:hover {
 	text-shadow:3px 3px 0px #ba1c3e;
 }
 
-button	{
+button, li.ButtonLike	{
 	background:#ff335f;
 	color:white;
 	text-shadow:1px 1px 0px #ba1c3e
 }
 
-button:hover	{
+button:hover, li.ButtonLike.Selected	{
 	background:#df132f;
 	color:white;
 	text-shadow:1px 1px 0px #ba1c3e
