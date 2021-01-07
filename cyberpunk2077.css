@@ -95,6 +95,8 @@ wrapper#HeadlineWrapper{
 body {
 	background: rgb(73,22,25);
 	background: url("https://files.gamebanana.com/bitpit/d7p_yldx4aavjwo.jpg_large");
+	background-size: cover; /* Prevent the background from being janky
+	on monitors bigger or smaller than 1920x1080 in either dimension*/
 	background-attachment:fixed;
 }
 
