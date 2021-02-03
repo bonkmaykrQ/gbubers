@@ -237,7 +237,7 @@ div.PostReplies module div.Content ul.Posts li.Post{
 }
 
 
-media only screen and (max-width : 768px){
+media only screen{
 body{
 	background:url(https://files.gamebanana.com/bitpit/stripe22.gif);
 	background-attachment:scroll;
