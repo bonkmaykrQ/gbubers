@@ -122,11 +122,12 @@ overlay#Headline{
 }
 
 body{
-	background:url(https://files.gamebanana.com/bitpit/stripe22.gif);
+	background:url(https://files.gamebanana.com/bitpit/briefignorantblackbuck-size_restric.gif);
+	background-attachment:fixed;
 }
 
 wrapper#BodyWrapper{
-    background:transparent;
+    background:url(https://files.gamebanana.com/bitpit/stripe22.gif);
 }
 
 #MainContentHeader{
