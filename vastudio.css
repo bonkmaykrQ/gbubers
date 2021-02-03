@@ -236,8 +236,7 @@ div.PostReplies module div.Content ul.Posts li.Post{
     padding:5px;
 }
 
-
-media only screen{
+/*disable space background on main page because fucking ugly*/
 body{
 	background:url(https://files.gamebanana.com/bitpit/stripe22.gif);
 	background-attachment:scroll;
@@ -245,5 +244,4 @@ body{
 
 wrapper#BodyWrapper{
     background:transparent;
-}
 }
