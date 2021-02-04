@@ -137,3 +137,10 @@ a,.Linklike,button,.ButtonLike,input[type=range]::-webkit-slider-runnable-track,
 {
         cursor : var(--pointerCursor);
 }
+
+#ResponsibilitiesModule > div > dl > dd > ul > li{
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	border:none;
+}
+
