@@ -1,0 +1,89 @@
+/*
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+::-moz-selection { /* Code for Firefox */
+  color: #5c4e00;
+  background: white;
+}
+
+::selection {
+  color: #5c4e00;
+  background: white;
+}
+
+* {
+	cursor:url(https://files.gamebanana.com/bitpit/gam235-1.png), default;
+}
+
+body {
+	background:url("https://files.gamebanana.com/bitpit/d0335855fe5677d4772c85cd31f8aa35.jpg");
+	background-attachment:scroll;
+	background-size:420px;
+}
+
+#BodyWrapper {
+	background:rgba(92, 78, 0,0.8);
+}
+
+@font-face {
+	font-family:capture;
+	src:url("https://files.gamebanana.com/bitpit/capture_it.ttf");
+}
+
+:root {
+	--LinkColor:#4aed75;
+	--LinkHoverColor:#ffffff;
+	--SecondaryNavBackgroundColor: #007820;
+	--PrimaryNavBackgroundColor: rgb(2,89,0)/*#28b84f*/;
+	--NavPaneBackgroundColor: #004713;
+	--NavUpdatesIndicatorColor: #ffff00;
+	--InputTextColor: #ffdc7a;
+	--InputBackgroundColor: linear-gradient(0deg, rgba(2,89,0,1) 0%, rgba(67,171,59,1) 100%);
+	--InputHoverBackgroundColor: linear-gradient(0deg, rgba(61,92,61,1) 0%, rgba(172,207,169,1) 100%);
+	--InputFocusBackgroundColor: linear-gradient(0deg, rgba(61,92,61,1) 0%, rgba(172,207,169,1) 100%);
+	--InputPlaceholderColor: #fff4d6;
+}
+
+overlay#Headline {
+	font-family:capture;
+}
+
+#HeadlineWrapper {
+	background:url("https://files.gamebanana.com/bitpit/4120703b7903228ca436239256ef6b21.jpg");
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+button {
+	background:linear-gradient(0deg, rgba(2,89,0,1) 0%, rgba(67,171,59,1) 100%);
+}
+button:hover {
+	background:linear-gradient(0deg, rgba(61,92,61,1) 0%, rgba(172,207,169,1) 100%);
+}
+
+::-webkit-scrollbar {
+}
+
+::-webkit-scrollbar-track {
+  background: #004713;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, rgba(2,89,0,1) 0%, rgba(67,171,59,1) 100%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(0deg, rgba(61,92,61,1) 0%, rgba(172,207,169,1) 100%);
+}
