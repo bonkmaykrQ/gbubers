@@ -61,12 +61,12 @@ h1, h2 {
 	text-shadow:5px 5px 0px #000000;
 }
 
-p, div, span {
+p:not(.AvatarTooltip p), div:not(.AvatarTooltip div), span:not(.AvatarTooltip span) {
 	color:white;
 	text-shadow:1px 1px 0px #000000;
 }
 
-a {
+a:not(.AvatarTooltip a) {
 	color:#ff335f;
 	text-shadow:1px 1px 0px #000000;
 }
