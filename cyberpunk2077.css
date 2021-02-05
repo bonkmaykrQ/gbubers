@@ -144,4 +144,4 @@ a,.Linklike,button,.ButtonLike,input[type=range]::-webkit-slider-runnable-track,
 	border:none;
 }
 
-select option {background:#ffff00;color:black;}
+select option:hover {background:#ffff00;color:black;}
