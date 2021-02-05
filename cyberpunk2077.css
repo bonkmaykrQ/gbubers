@@ -78,6 +78,7 @@ a {
     color: var(--LinkColor);
     text-shadow: none;
 }statelabel.IsRipeRelated a{color: var(--LinkColor);text-shadow: 0 0 0.125em black;}
+statelabel.IsRipeRelated a:hover{color: var(--LinkHoverColor);text-shadow: 0 0 0.125em black;}
 
 a:hover {
 	color:#f598ac;
