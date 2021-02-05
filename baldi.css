@@ -24,17 +24,27 @@
 }
 
 :root{
-        --SecondaryNavBackgroundColor: #000636;
-        --PrimaryNavBottomBorder: #5367ff;
-        --PrimaryNavBackgroundColor:#000b5e;
+        --SecondaryNavBackgroundColor: #00bb21;
+        --PrimaryNavBottomBorder: #58ff76;
+        --PrimaryNavBackgroundColor:#00bb21;
         --InputFieldColorPrimary:#000b5e;
         --InputFieldColorPrimaryHover:#000636;
         --InputValueColor:#ffffff;
-        --NavPaneBackgroundColor:#000b5e;
+        --NavPaneBackgroundColor:#006712;
+	--DefaultTextColor:#ffffff;
+	--DefaultGreyColor:#b2ff82;
+	--DefaultGreenColor:#00ffed;
        
-        --uhhhhhhhhh:linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,175,0,1) 13%, rgba(255,252,0,1) 22%, rgba(0,255,11,1) 35%, rgba(0,232,255,1) 50%, rgba(29,0,255,1) 68%, rgba(255,0,241,1) 86%, rgba(255,0,0,1) 100%);
-        --bruh:linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,175,0,1) 7%, rgba(255,252,0,1) 14%, rgba(0,255,11,1) 21%, rgba(0,232,255,1) 28%, rgba(29,0,255,1) 35%, rgba(255,0,241,1) 42%, rgba(255,0,0,1) 48%, rgba(255,175,0,1) 55%, rgba(255,252,0,1) 62%, rgba(0,255,11,1) 69%, rgba(0,232,255,1) 76%, rgba(29,0,255,1) 83%, rgba(255,0,241,1) 90%);
+        --uhhhhhhhhh:white;
+        --bruh:white;
 }
+
+@font-face {
+	font-family:comicsans;
+	src:url(https://files.gamebanana.com/bitpit/comic_sans_ms_400.ttf);
+}
+
+* {font-family:comicsans;}
 
 .Avatar, .Avatar img{border-radius:50px;box-shadow: 0 0 0 0.125em rgba(0,0,0,0.75);}
 .Avatar.Offline{
@@ -59,7 +69,7 @@ h1#PageTitle{
         background:var(--uhhhhhhhhh);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family:Sans-serif;
+        font-family:comicsans;
 }
 
 h2#PageDescription{
@@ -84,21 +94,22 @@ input[type=text]:focus, input[type=password]:focus, input[type=password]:focus, 
 div.Content{
         background: var(--PrimaryNavBackgroundColor);
         border: solid 1px teal;
-        border-image-source:url(https://files.gamebanana.com/bitpit/blueborder.png);
+        border-image-source:url(https://files.gamebanana.com/bitpit/greenborder.png);
         border-image-slice: 10.667;
         border-image-width:8;
 }
 
 overlay#Headline{
-        background: url(https://files.gamebanana.com/bitpit/unnamed_2_.jpg);
+        background: url(https://files.gamebanana.com/bitpit/baldi-checkerdither-lg.png);
+	background-size:40px;
         background-attachment:scroll;
 }
 
 
 div#ContentGrid{
-        background:url(https://files.gamebanana.com/bitpit/1488185336075-1.png);
-    background-repeat:repeat repeat;
-    background-size:50%;
+        background:url(https://files.gamebanana.com/bitpit/161249256839522781_70b3a.png);
+    background-repeat:fixed;
+    background-size:cover;
     background-attachment:fixed;
 }
 
@@ -124,15 +135,17 @@ p.Description{
 }
 
 button.IconButton, button.IconOnlyButton{
-        background: url(https://files.gamebanana.com/bitpit/unnamed_2_.jpg);
-        text-shadow: 0 0 5px white;
-        border:1px solid #5367ff;
+        background: url(https://files.gamebanana.com/bitpit/baldi-checkerdither-lg.png);
+	color:white;
+        text-shadow: 0 0 5px black;
+        border:1px solid #b2ff82;
         border-radius:0px;
         transition-duration:0.4s;
 }
 button.IconButton:hover, button.IconOnlyButton:hover{
-        background: url(https://files.gamebanana.com/bitpit/unnamed_2_.jpg);
-        text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white;
+        background: url(https://files.gamebanana.com/bitpit/baldi-checkerdither-lg.png);
+	color:lime;
+        text-shadow: 0 0 5px black, 0 0 5px black, 0 0 5px black;
         /*border:3px solid deeppink;
         margin-top:-2px;
         margin-left:-2px;*/
