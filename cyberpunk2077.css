@@ -32,6 +32,8 @@
 	--BodyWrapperBackground:linear-gradient(0deg, rgba(73,22,25,0.9) 0%, rgba(85,26,29,0.9) 37%, rgba(129,39,45,0.9) 74%, rgba(168,50,58,0.9) 100%) no-repeat fixed center;
 	--InputBackgroundColor:rgba(41, 196, 196, 0.8);
 	--InputTextColor:#ffffff;
+	
+	--DefaultTextColor:white;
 }
 
 img#GbLogo{
@@ -61,19 +63,29 @@ h1, h2 {
 	text-shadow:5px 5px 0px #000000;
 }
 
-p:not(.AvatarTooltip p), div:not(.AvatarTooltip div), span:not(.AvatarTooltip span) {
+/*p, div, span*/ .PageModule .Content, .PageModule .Content div,.PageModule .Content span,.PageModule .Content p{
 	color:white;
 	text-shadow:1px 1px 0px #000000;
 }
 
-a:not(.AvatarTooltip a) {
+a {
 	color:#ff335f;
 	text-shadow:1px 1px 0px #000000;
 }
 
-a:hover:not(.AvatarTooltip a) {
+.AvatarTooltip a {
+    color: var(--LinkColor);
+    text-shadow: none;
+}
+
+a:hover {
 	color:#f598ac;
 	text-shadow:3px 3px 0px #ba1c3e;
+}
+
+.AvatarTooltip a:hover {
+    color: var(--LinkHoverColor);
+    text-shadow: none;
 }
 
 button, li.ButtonLike	{
