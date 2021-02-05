@@ -71,7 +71,7 @@ a:not(.AvatarTooltip a) {
 	text-shadow:1px 1px 0px #000000;
 }
 
-a:hover {
+a:hover:not(.AvatarTooltip a) {
 	color:#f598ac;
 	text-shadow:3px 3px 0px #ba1c3e;
 }
