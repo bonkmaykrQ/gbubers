@@ -70,8 +70,12 @@ h1, h2 {
 }
 
 a {
-	color:#ff335f;
+	color:#ff7996/*#ff335f*/;
 	text-shadow:1px 1px 0px #000000;
+}
+
+.PageModule h3 a {
+	color:#ff335f;
 }
 
 .AvatarTooltip a {
@@ -83,6 +87,10 @@ statelabel.IsRipeRelated a:hover{color: var(--LinkHoverColor);text-shadow: 0 0 0
 a:hover {
 	color:#f598ac;
 	text-shadow:3px 3px 0px #ba1c3e;
+}
+
+.PageModule h3 a:hover {
+	color:#f598ac;
 }
 
 .AvatarTooltip a:hover {
