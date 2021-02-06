@@ -31,7 +31,10 @@
 	--SubNavigatorBorderColor:#0089ff;
 	--BodyWrapperBackground:linear-gradient(0deg, rgba(73,22,25,0.9) 0%, rgba(85,26,29,0.9) 37%, rgba(129,39,45,0.9) 74%, rgba(168,50,58,0.9) 100%) no-repeat fixed center;
 	--InputBackgroundColor:rgba(41, 196, 196, 0.8);
-	--InputTextColor:#ffffff;
+	--InputTextColor:#121a1f;
+	--InputHoverBackgroundColor:rgb(103 255 178 / 80%)/*rgb(216 219 46 / 80%)*/;
+	--InputFocusBackgroundColor:rgb(103 255 178 / 80%)/*rgb(216 219 46 / 80%)*/;
+	--InputPlaceholderColor:#121a1f;
 	
 	--DefaultTextColor:white;
 }
