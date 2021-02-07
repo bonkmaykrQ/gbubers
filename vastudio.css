@@ -64,6 +64,7 @@
 	opacity:1 !important; 
 	/*Revert previous changes on certain elements*/
 }
+.Avatar.IsRipeSupporter{border-radius:50px;}
 
 h1#PageTitle{
 	background:var(--uhhhhhhhhh);
