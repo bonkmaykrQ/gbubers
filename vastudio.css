@@ -56,16 +56,6 @@
 .Avatar.Online{
 	opacity:1;
 }
-.Avatar.IsRipeSupporter{ 
-	/*Disables Prettier Ripe borders for consistency's sake*/
-	background-size: 100% !important;
-	animation:none !important;
-	-webkit-animation:none !important;
-	border-radius: 50px !important;
-	
-	box-shadow:none !important;
-	-webkit-box-shadow:none !important;
-}
 .Avatar.Online:after{display:none !important;}
 .Identity .Avatar, .Identity .Avatar img,
 #IdentityModule .Content a,
