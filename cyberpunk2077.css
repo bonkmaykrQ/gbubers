@@ -37,6 +37,9 @@
 	--InputPlaceholderColor:#121a1f;
 	
 	--DefaultTextColor:white;
+	
+	--DefaultRedColor:#ffff00;
+	--DefaultGreenColor:#00ffff;
 }
 
 img#GbLogo{
@@ -170,3 +173,22 @@ a,.Linklike,button,.ButtonLike,input[type=range]::-webkit-slider-runnable-track,
 }
 
 select option:hover {background:#ffff00;color:black;}
+
+.GreenColor {
+	color:#00ffff !important;
+}
+
+.RedColor {
+	color:#ffff00 !important;
+}
+
+/*.TableOfContents ul li span.HeadingText*/
+.TableOfContents span.HeadingText {
+	color:#ffffff;
+	text-shadow:1px 1px 0px black;
+}
+.TableOfContents span.HeadingText:hover {
+	color:#ffff00;
+	text-shadow:0px 0px 5px #00ffff, 0px 0px 2px #00ffff, 
+	0px 0px 0px #00ffff;
+}
