@@ -194,3 +194,18 @@ select option:hover {background:#ffff00;color:black;}
 	text-shadow:0px 0px 5px #00ffff, 0px 0px 2px #00ffff, 
 	0px 0px 0px #00ffff;
 }
+
+.Spoiler {filter:blur(4px);transition-duration:0.08s;}
+.Spoiler:hover {filter:blur(0px);}
+
+
+
+.Content .RichText h1, .Content .RichText.TextareaLike h1 {font-size:30px;font-family:goodtimes;margin-bottom:8px;margin-top:8px;text-shadow:2px 2px 0px black !important;}
+.Content .RichText h2, .Content .RichText.TextareaLike h2 {font-size:24px;font-family:goodtimes;margin-bottom:5px;margin-top:5px;text-shadow:2px 2px 0px black !important;}
+.Content .RichText h3, .Content .RichText.TextareaLike h3 {font-size:16px;font-family:goodtimes;text-shadow:2px 2px 0px black !important;}
+
+.Content .RichText h1 .HeadingText, .Content .RichText.TextareaLike h1 {font-size:30px;font-family:cyberpunk;}
+.Content .RichText h2 .HeadingText, .Content .RichText.TextareaLike h2 {font-size:24px;font-family:cyberpunk;}
+.Content .RichText h3 .HeadingText, .Content .RichText.TextareaLike h3 {font-size:16px;font-family:cyberpunk;}
+
+.IndexNumber {color:#c1c1c1 !important;}
