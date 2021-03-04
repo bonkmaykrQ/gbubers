@@ -28,7 +28,7 @@
 	--NavPaneBackgroundColor:linear-gradient(0deg, rgba(73,22,25,1) 0%, rgba(85,26,29,1) 37%, rgba(129,39,45,1) 74%, rgba(168,50,58,1) 100%);
 	--PrimaryNavBackgroundColor:rgba(255, 255, 0, 1.0);
 	--SecondaryNavBackgroundColor:rgba(255, 255, 0, 1.0);
-	--SubNavigatorBorderColor:#0089ff;
+	--SubNavigatorBorderColor:#0089ff/*#ffff00*/;
 	--BodyWrapperBackground:linear-gradient(0deg, rgba(73,22,25,0.9) 0%, rgba(85,26,29,0.9) 37%, rgba(129,39,45,0.9) 74%, rgba(168,50,58,0.9) 100%) no-repeat fixed center;
 	--InputBackgroundColor:rgba(41, 196, 196, 0.8);
 	--InputTextColor:#121a1f;
@@ -40,6 +40,14 @@
 	
 	--DefaultRedColor:#ffff00;
 	--DefaultGreenColor:#00ffff;
+	
+	--DefaultBlueColor: #0dff49;
+        --DefaultRedDarkColor: #bab630;
+        --DefaultGreenDarkColor: #038a94;
+        --DefaultPurpleColor: #bb69ff;
+        --DefaultGreyColor: #999999;
+        --DefaultOrangeColor: #03fc20;
+        --DefaultYellowColor: #fca103;
 }
 
 img#GbLogo{
@@ -209,3 +217,7 @@ select option:hover {background:#ffff00;color:black;}
 .Content .RichText h3 .HeadingText, .Content .RichText.TextareaLike h3 {font-size:16px;font-family:cyberpunk;}
 
 .IndexNumber {color:#c1c1c1 !important;}
+
+#HiddenColumnToggleButton maticon {background:linear-gradient(0deg, rgba(73,22,25,1) 0%, rgba(85,26,29,1) 37%, rgba(129,39,45,1) 74%, rgba(168,50,58,1) 100%);}
+
+#ImportantLinks li a {filter:grayscale(100%);}
