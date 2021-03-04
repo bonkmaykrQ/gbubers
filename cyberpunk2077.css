@@ -221,3 +221,5 @@ select option:hover {background:#ffff00;color:black;}
 #HiddenColumnToggleButton maticon {background:linear-gradient(0deg, rgba(73,22,25,1) 0%, rgba(85,26,29,1) 37%, rgba(129,39,45,1) 74%, rgba(168,50,58,1) 100%);}
 
 #ImportantLinks li a {filter:grayscale(100%);}
+
+spriteIcon, .SpriteIcon { /*set background-image to custom spritesheet*/ }
