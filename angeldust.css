@@ -20,7 +20,7 @@
 	--BodyOverlayBackground:rgba(86, 39, 77, 0.5);
 	
 	--DefaultRedColor:#ff6a6a;
-	--DefaultGreenColor:#e07cb7;
+	--DefaultGreenColor:#b3ff97/*#e07cb7*/;
 }
 
 ::selection {background:#ff6a6a;color:white;}
