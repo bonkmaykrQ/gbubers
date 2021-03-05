@@ -1,0 +1,96 @@
+:root {
+    --PrimaryNavBackgroundColor: #7D4071;
+	--SecondaryNavBackgroundColor: #7D4071;
+	--NavPaneBackgroundColor:#5d3055;
+	--LinkColor: #ffbfe4;
+	--LinkHoverColor: #ff6a6a;
+	--BodyBackground:#56274d;
+	
+	--InputTextColor:#ffafaf;
+	--InputPlaceholderColor:#ffbfe4;
+	--InputBackgroundColor:#c56ca0;
+	--InputHoverBackgroundColor:#e07cb7;
+	--InputFocusBackgroundColor:#ff6a6a;
+	
+	--ButtonFontColor:white;
+	--ButtonBackground:#c56ca0;
+	--ButtonHoverBackgroundColor:#ff6a6a;
+	--ButtonHoverFontColor:white;
+	
+	--BodyOverlayBackground:rgba(86, 39, 77, 0.5);
+	
+	--DefaultRedColor:#ff6a6a;
+	--DefaultGreenColor:#e07cb7;
+}
+
+::selection {background:#ff6a6a;color:white;}
+::moz-selection {background:#ff6a6a;color:white;}
+::-webkit-scrollbar {
+  background-color: #c56ca0;
+}::-webkit-scrollbar-track {
+  background-color: #c56ca0;
+}::-webkit-scrollbar-thumb {
+  background-color: #e07cb7;
+}::-webkit-scrollbar-thumb:hover {
+  background-color: #ff6a6a;
+}
+
+@font-face {
+	font-family:precious;
+	src:url("https://files.gamebanana.com/bitpit/precious.ttf");
+}
+
+@font-face {
+	font-family:killa;
+	src:url("https://files.gamebanana.com/bitpit/bulletto_killa.ttf");
+}
+
+h1, h2 {font-family:precious;}
+
+h3, h4, h5, h6, h7, PageModule h3 {font-family:killa !important;}
+
+input[type="text"] {border:1px solid #ffbfe4;}
+input[type="text"]:focus {text-shadow:0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black;}
+
+spriteicon {
+	filter:sepia(100%);
+}
+
+img#GbLogo {filter:hue-rotate(-70deg);}
+
+.Content button, button.ExtendedContentButton {
+	box-shadow:0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
+	color:var(--ButtonFontColor);
+	background-color:var(--ButtonBackground);
+}
+.Content button:hover, button.ExtendedContentButton:hover {
+	box-shadow:0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black, 0px 0px 5px black;
+	color:var(--ButtonHoverFontColor) !important;
+	background-color:var(--ButtonHoverBackgroundColor) !important;
+}
+
+body{background:var(--BodyBackground);}
+
+#BodyWrapper {
+	background:/*var(--BodyOverlayBackground), */
+	url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjAiIGhlaWdodD0iMzAiPgo8ZGVmcz4KPHJlY3QgaWQ9InIiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxNSIgZmlsbD0iIzU2Mjc0ZCIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZT0iIzYzMmQ1OSI+PC9yZWN0Pgo8ZyBpZD0icCI+Cjx1c2UgeGxpbms6aHJlZj0iI3IiPjwvdXNlPgo8dXNlIHk9IjE1IiB4bGluazpocmVmPSIjciI+PC91c2U+Cjx1c2UgeT0iMzAiIHhsaW5rOmhyZWY9IiNyIj48L3VzZT4KPHVzZSB5PSI0NSIgeGxpbms6aHJlZj0iI3IiPjwvdXNlPgo8L2c+CjwvZGVmcz4KPHVzZSB4bGluazpocmVmPSIjcCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMjUpIHNrZXdZKDQwKSI+PC91c2U+Cjx1c2UgeGxpbms6aHJlZj0iI3AiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwIDApIHNrZXdZKC00MCkiPjwvdXNlPgo8L3N2Zz4=");
+}
+
+#MainContent {background:transparent;}
+
+#Headline {padding-top:50px !important;}
+
+li.Post {
+	background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjAiIGhlaWdodD0iMzAiPgo8ZGVmcz4KPHJlY3QgaWQ9InIiIHdpZHRoPSIzMCIgaGVpZ2h0PSIxNSIgZmlsbD0iIzNiMWEzNCIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZT0iIzQyMWUzYyI+PC9yZWN0Pgo8ZyBpZD0icCI+Cjx1c2UgeGxpbms6aHJlZj0iI3IiPjwvdXNlPgo8dXNlIHk9IjE1IiB4bGluazpocmVmPSIjciI+PC91c2U+Cjx1c2UgeT0iMzAiIHhsaW5rOmhyZWY9IiNyIj48L3VzZT4KPHVzZSB5PSI0NSIgeGxpbms6aHJlZj0iI3IiPjwvdXNlPgo8L2c+CjwvZGVmcz4KPHVzZSB4bGluazpocmVmPSIjcCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAtMjUpIHNrZXdZKDQwKSI+PC91c2U+Cjx1c2UgeGxpbms6aHJlZj0iI3AiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMwIDApIHNrZXdZKC00MCkiPjwvdXNlPgo8L3N2Zz4=");
+	border:1px solid #ffbfe4 !important;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:5px;
+}
+
+records.Grid record { /*Submission Lists, etc*/
+	margin: 4px 4px 4px 4px;
+	
+	border:1px solid #ffbfe4 !important;
+	background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cGF0aCBkPSJNLTIgMTBMMTAgLTJaTTEwIDZMNiAxMFpNLTIgMkwyIC0yIiBzdHJva2U9IiM0ZjExNGUiIHN0cm9rZS13aWR0aD0iNC41Ij48L3BhdGg+Cjwvc3ZnPg=="),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIHN0b3AtY29sb3I9IiMxZjBmMWUiPjwvc3RvcD4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZDE1NGNmIj48L3N0b3A+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZykiPjwvcmVjdD4KPC9zdmc+");
+}
