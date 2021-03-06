@@ -21,6 +21,15 @@
 	
 	--DefaultRedColor:#ff6a6a;
 	--DefaultGreenColor:#b3ff97/*#e07cb7*/;
+	--DefaultBlueColor:#04ff00;
+}
+
+.Content button:hover {
+	--DefaultRedColor:#ffffff;
+}
+
+#ImportantLinks li a {
+	color:#fff5bf !important;
 }
 
 ::selection {background:#ff6a6a;color:white;}
@@ -53,7 +62,10 @@ input[type="text"] {border:1px solid #ffbfe4;}
 input[type="text"]:focus {text-shadow:0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black;}
 
 spriteicon {
-	filter:sepia(100%);
+	filter:sepia(100%) !important;
+}
+spriteicon.FeaturedTodayIcon {
+	filter:sepia(0%) !important;
 }
 
 img#GbLogo {filter:hue-rotate(-70deg);}
