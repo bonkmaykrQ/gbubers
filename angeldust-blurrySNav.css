@@ -1,0 +1,8 @@
+#SecondaryNav {
+	background: #7d40717a !important;
+	backdrop-filter: blur(2px) !important;
+}
+
+:root {
+	--NavPaneBackgroundColor:#5d305542 !important;
+}
