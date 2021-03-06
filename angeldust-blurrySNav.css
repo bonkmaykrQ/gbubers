@@ -3,7 +3,7 @@
 	backdrop-filter: blur(2px);
 }
 
-#PrimaryNav {
+#PrimaryNav, li.Post {
 	backdrop-filter: blur(2px);
 }
 
