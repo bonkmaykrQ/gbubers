@@ -22,6 +22,12 @@
 	--DefaultRedColor:#ff6a6a;
 	--DefaultGreenColor:#b3ff97/*#e07cb7*/;
 	--DefaultBlueColor:#04ff00;
+	
+	--FixedMainContentHeaderBackground:#7D4071;
+	--SubNavigatorActiveTabBorderColor:#7D4071;
+	--SubNavigatorBorderColor:#7D4071;
+	
+	--NavUpdatesIndicatorColor:#ff6a6a;
 }
 
 .Content button:hover {
@@ -110,4 +116,8 @@ records.Grid record { /*Submission Lists, etc*/
 	
 	border:1px solid #ffbfe4 !important;
 	background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiPgo8cGF0aCBkPSJNLTIgMTBMMTAgLTJaTTEwIDZMNiAxMFpNLTIgMkwyIC0yIiBzdHJva2U9IiM0ZjExNGUiIHN0cm9rZS13aWR0aD0iNC41Ij48L3BhdGg+Cjwvc3ZnPg=="),url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPgo8bGluZWFyR3JhZGllbnQgaWQ9ImciIHgyPSIxIiB5Mj0iMSI+CjxzdG9wIHN0b3AtY29sb3I9IiMxZjBmMWUiPjwvc3RvcD4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZDE1NGNmIj48L3N0b3A+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZykiPjwvcmVjdD4KPC9zdmc+");
+}
+
+body[data-_sSecondaryNavMode=Dock][data-_sSecondaryNavPosition=Left][data-_sHeaderStyle=Floating] #MainContentHeader.Fixed {
+	padding-left:0px;
 }
