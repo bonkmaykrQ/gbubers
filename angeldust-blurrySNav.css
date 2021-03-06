@@ -1,8 +1,31 @@
 #SecondaryNav {
 	background: #7d40717a !important;
-	backdrop-filter: blur(2px) !important;
+	backdrop-filter: blur(2px);
+}
+
+#PrimaryNav {
+	backdrop-filter: blur(2px);
+}
+
+#PrimaryNav module pane, #SecondaryNav wrapper .Selected pane {
+	background: #7d4071aa !important;
+	backdrop-filter: blur(10px) !important;
 }
 
 :root {
-	--NavPaneBackgroundColor:#5d305542 !important;
+	--NavPaneBackgroundColor:#5d3055a3 !important;
+	
+	--PrimaryNavBackgroundColor:#7d4071f5 !important;
+	
+	--FixedMainContentHeaderBackground:#5d3055a3 !important;
+	--SubNavigatorActiveTabBorderColor:#5d3055a3 !important;
+	--SubNavigatorBorderColor:#5d3055a3 !important;
+}
+
+#StatsModule .Content ul li {
+	backdrop-filter: blur(5px) !important;
+}
+
+body[data-_sSecondaryNavMode=Dock][data-_sSecondaryNavPosition=Left][data-_sHeaderStyle=Floating] #MainContentHeader.Fixed {
+	backdrop-filter: blur(5px) !important;
 }
