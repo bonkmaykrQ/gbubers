@@ -40,6 +40,8 @@ body {
     --NavUpdatesIndicatorColor:#e8b041;
 
     --SubNavigatorActiveTabBorderColor:#e8b041;
+
+    --FixedMainContentHeaderBackground:#872611;
 }
 
 #SecondaryNav wrapper module pane article {
@@ -83,4 +85,14 @@ h1, h2, h3 {
 
 statelabel, #AddTicketLink, #AddBugLink, #AddIdeaLink{
     background:rgba(0,0,0,.15) !important;
+}
+
+.ExtendedContentButton, .PostStamps li {
+    background:#0000002e !important;
+    color:#eacb8e;
+}
+
+.ExtendedContentButton::hover, .PostStamps li::hover {
+    background:#a47e335e !important;
+    color:#e8b041;
 }
