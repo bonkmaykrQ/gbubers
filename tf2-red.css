@@ -1,0 +1,86 @@
+@font-face {
+    font-family:tf2build;
+    src:url(https://files.gamebanana.com/bitpit/tf2build.ttf);
+}
+
+body {
+    background:url(https://files.gamebanana.com/bitpit/73a351012fbb94a99915c52305975210.png);
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+}
+
+#BodyWrapper {
+    background:#912913d6;
+}
+
+:root {
+    --NavPaneBackgroundColor:#0000008c;
+    --PrimaryNavBackgroundColor:#872611;
+    --SecondaryNavBackgroundColor:#872611;
+
+    --DefaultRedColor:#eaff94;
+    --DefaultBlueColor:#8fdfea;
+    --LinkColor:#e8b041;
+    --LinkHoverColor:#a47e33;
+
+    --InputPlaceholderColor:#eacb8e91;
+    --InputTextColor:#eacb8e;
+    --InputBackgroundColor:#0000002e;
+    --InputHoverBackgroundColor:#a47e335e;
+    --InputFocusBackgroundColor:#a47e335e;
+
+    --DefaultTextColor:#e0d2b5;
+
+    --ButtonBackground:#0000002e;
+    --ButtonFontColor:#eacb8e;
+    --ButtonHoverBackgroundColor:#a47e335e;
+    --ButtonHoverFontColor:#e8b041;
+
+    --NavUpdatesIndicatorColor:#e8b041;
+
+    --SubNavigatorActiveTabBorderColor:#e8b041;
+}
+
+#SecondaryNav wrapper module pane article {
+    background:url(https://files.gamebanana.com/bitpit/engineer_emblem_red_dark.png);
+    background-size:300px;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+::selection {
+    background:#00000085;
+    color:#e8b041;
+}::moz-selection {
+    background:#00000085;
+    color:#e8b041;
+}::-webkit-scrollbar {
+  background-color: #872611;
+}::-webkit-scrollbar-track {
+  background-color: #913c0c00;
+}::-webkit-scrollbar-thumb {
+  background-color: #af3115;
+  /*background-color:#e8b041;*/
+}::-webkit-scrollbar-thumb:hover {
+  background-color: #ab361b8f;
+}
+
+module pane {
+    backdrop-filter:blur(5px);
+}
+
+spriteicon {
+	filter:sepia(100%) !important;
+}
+spriteicon.FeaturedTodayIcon, #ShareButtonsModule .Content ul li a spriteicon {
+	filter:sepia(0%) !important;
+}
+
+h1, h2, h3 {
+    font-family:tf2build !important;
+}
+
+statelabel, #AddTicketLink, #AddBugLink, #AddIdeaLink{
+    background:rgba(0,0,0,.15) !important;
+}
