@@ -83,7 +83,7 @@ h1, h2, h3 {
     font-family:tf2build !important;
 }
 
-statelabel, #AddTicketLink, #AddBugLink, #AddIdeaLink{
+statelabel:not(.IsRipeRelated), #AddTicketLink, #AddBugLink, #AddIdeaLink{
     background:rgba(0,0,0,.15) !important;
 }
 
