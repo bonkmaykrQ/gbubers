@@ -1,0 +1,162 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+    
+@font-face {
+    src:url("https://files.gamebanana.com/bitpit/neonmachine-n6bg.ttf");
+    font-family:neon;
+}
+
+body {
+    background:url("https://files.gamebanana.com/bitpit/imgonline-com-ua-resize-1nwsemgj7si.jpg");
+    background-size:cover;
+    background-position: bottom center;
+    background-attachment:fixed;
+}
+
+#BodyWrapper {
+    background:rgba(0,0,0,0.8);
+}
+
+:root {
+    /*
+        I am honestly getting sick of switching DevTools tabs back and forth to copy
+        from the CSS rules list for this. The palette variables are both the easiest
+        and hardest thing about making an uberstyle. I'm just going to copy the whole
+        thing, forget about cleanliness.
+    */
+    
+    --DefaultNanoFontSize: 0.5em;
+    --DefaultMicroFontSize: 0.6em;
+    --DefaultTinyFontSize: 0.7em;
+    --DefaultMiniFontSize: 0.8em;
+    --DefaultSmallFontSize: 0.9em;
+    --DefaultMediumFontSize: 1em;
+    --DefaultLargeFontSize: 1.25em;
+    --DefaultXLargeFontSize: 1.5em;
+    --DefaultXxLargeFontSize: 2em;
+    --DefaultXxxLargeFontSize: 2.5em;
+    --DefaultXxxxLargeFontSize: 3em;
+    --DefaultXxxxxLargeFontSize: 4em;
+    --DefaultTextFontFamily: "Open Sans", sans-serif;
+    --DefaultTechnicalFontFamily: "IBM Plex Mono", monospace;
+    --DefaultTextColor: #f2fff2;
+    --DefaultBlueColor: #40cc40;
+    --DefaultRedColor: #FF4E4E;
+    --DefaultRedDarkColor: #701E24;
+    --DefaultGreenColor: #6EE16C;
+    --DefaultGreenDarkColor: #344734;
+    --DefaultPurpleColor: #AAFF00;
+    --DefaultGreyColor: #AAAAAA;
+    --DefaultOrangeColor: #FFFF30;
+    --DefaultYellowColor: #30FF00;
+    --StateLabelBackground: #30ff3020;
+    --LinkColor: #50FF33;
+    --LinkHoverColor: #00CCe0;
+    /* this is retarded
+    --BodyBackground: #131a20 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+    --BodyWrapperBackground: #151d23 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+    */
+    --VisibleHiddenColumnBackground: rgba(0,70,0,0.7);
+    --NavPaneBackgroundColor: rgba(0,70,0,0.0);
+    --PrimaryNavBottomBorder: 2px solid rgba(0,155,0,0.8);
+    --PrimaryNavBackgroundColor: rgba(0,85,0,0.8);
+    --PrimaryNavHeight: 60px;
+    --PrimaryNavFontSize: 1em;
+    --SecondaryNavBackgroundColor: rgba(0,70,0,0.7);
+    --SecondaryNavFullWidth: 400px;
+    --SecondaryNavSmallIconOuterWidth: 36px;
+    --SecondaryNavRegularIconOuterWidth: 52px;
+    --NavControlsHeight: 1.5em;
+    --NavUpdatesIndicatorColor: #6CB1E1;
+    --NavPaneTitleFontFamily: neon;
+    --NavPaneTitleFontSize: 1.5em;
+    --PageTitleFontSize: 3em;
+    --PageTitleFontSize800: 2.5em;
+    --PageTitleFontSize600: 2em;
+    --PageTitleFontSize400: 1.5em;
+    --PageTitleColor: #ccffcc;
+    --PageDescriptionFontSize: 1em;
+    --BreadcrumbFontSize: 0.8em;
+    --FixedPageTitleFontSize: 1em;
+    --FixedMainContentHeaderBackground: #151d23 url(data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+    --SubNavigatorFontSize: 1.15em;
+    --SubNavigatorFixedFontSize: 0.8em;
+    --SubNavigatorBackgroundColor: rgba(0,70,0,0.7);
+    --SubNavigatorBorderColor: rgba(0,70,0,0.9);
+    --SubNavigatorActiveTabBackgroundColor: transparent;
+    --SubNavigatorActiveTabFontColor: #6CB1E1;
+    --SubNavigatorActiveTabBorderColor: transparent;
+    --SubNavigatorDropdownBackgroundColor: rgba(0,70,0,0.9);
+    --SubNavigatorDropdownFontSize: 0.8em;
+    --SubNavigatorTabHoverBackgroundColor: rgba(0,70,0,0.9);
+    --SubNavigatorTabHoverBorderColor: transparent;
+    --MasterLogBackgroundColor: #0e1317;
+    --MasterLogFontSize: 0.9em;
+    --AuxiliaryColumnBackground: rgba(255,255,255,0.03);
+    --AuxiliaryColumnBorder: 1px solid rgba(0,0,0,0.25);
+    --AuxiliaryColumnModuleBorderColor: rgba(0,0,0,0.25);
+    --ModuleTitleFontSize: 1.25em;
+    --ModuleTitleFontFamily: "Open Sans", sans-serif;
+    --ModuleTitleUnderlineColor: #707070;
+    --ModuleDescriptionFontSize: 0.8em;
+    --ModuleDescriptionFontColor: #707070;
+    --ModuleBorderColor: rgba(255,255,255,0.05);
+    --InputTitleFontSize: 1.25em;
+    --InputTitleUnderlineColor: #707070;
+    --InputTextColor: #e2e2e2;
+    --InputBackgroundColor: rgba(0,120,0,0.6);
+    --InputHoverBackgroundColor: rgba(0,120,0,1.0);
+    --InputFocusBackgroundColor: rgba(30,120,30,0.8);
+    --InputPlaceholderColor: #00cc00;
+    --ButtonFontColor: #f6fff6a6;
+    --ButtonBackground: rgba(0,120,0,0.6);
+    --ButtonFontFamily: "IBM Plex Mono", monospace;
+    --ButtonFontSize: 0.9em;
+    --ButtonHoverFontColor: rgba(200,220,200,1.0);
+    --ButtonHoverBackgroundColor: rgba(0,120,0,0.9);
+    --PaginatorPageNumberBackgroundColor: #0b1013;
+    --AdvancedElementTabsBackgroundColor: transparent;
+    --AdvancedElementTabsBorderColor: #0e1317;
+    --AdvancedElementTabsActiveTabBackgroundColor: rgba(255,94,157,0.08);
+    --AdvancedElementTabsActiveTabFontColor: #FF5E9D;
+    --AdvancedElementTabsActiveTabBorderColor: #FF5E9D;
+    --TableColumnTitleFontColor: #ffffff8a;
+    --TableColumnTitleBackground: #ffffff14;
+    --EmbeddedWindowBackgroundColor: rgba(0,0,0,0.15);
+}
+
+#PrimaryNav, #SecondaryNav {
+    backdrop-filter: blur(2px);
+}
+
+ul.PostStamps li, #NavOptionsUiThemeList li, #BuddyChatPromoColumn {
+    background: var(--ButtonBackground) !important;
+}
+ul.PostStamps li:hover {
+    background: var(--ButtonHoverBackgroundColor) !important;
+}
+
+#MainContentHeader {
+    padding-left:0px !important;
+    right:0px !important;
+    background:rgba(0,50,0,1.0) !important;
+}
+
+spriteIcon, .SpriteIcon {
+    background-image: url("https://files.gamebanana.com/bitpit/161705346398125584.png");
+}
+
+module#IdentityModule div.Content {
+    border:1px solid #55ff5590;
+    background: url("https://files.gamebanana.com/bitpit/50e81b57409bbb13fc0749c3b2465fa5.gif");
+    text-shadow: 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black;
+}
