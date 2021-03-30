@@ -108,3 +108,38 @@ statelabel:not(.IsRipeRelated), #AddTicketLink, #AddBugLink, #AddIdeaLink{
     background:#a47e335e !important;
     color:#e8b041;
 }
+
+.BananaNavModuleIcon {
+  background: url("https://files.gamebanana.com/bitpit/1024px-team_fortress_2_style_logosv.png");
+  background-position:initial !important;
+  background-size:100% 100%;
+}
+
+img#GbLogo {
+	background:url("https://files.gamebanana.com/bitpit/tfbanana.png");
+	background-size:275px 45px;
+	
+	width: 275px;
+	height: 45px;
+	display:block;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+	padding-left: 275px;
+}
+
+/*img#GbLogo{display:none;}
+
+img#GbLogo::after{
+	content:url("https://files.gamebanana.com/bitpit/tfbanana.png");
+	width: 275px;
+	height: 45px;
+}
+
+@media only screen and (max-width: 486px)
+{
+  img#GbLogo::after {
+    content:url("https://files.gamebanana.com/bitpit/1024px-team_fortress_2_style_logosv.png");
+	  width: 45px;
+	  height: 45px;
+  }
+}*/
