@@ -95,6 +95,18 @@ h1, h2, h3 {
     font-family:tf2build !important;
 }
 
+module > h2 {
+    	font-size: 21px;
+	margin-top: 0px;
+	margin-bottom: 3px;
+}
+
+nav > wrapper > module > pane > header > strong {
+	font-size: 30px;
+	margin-left: 5px;
+    	font-family:tf2build !important;
+}
+
 statelabel:not(.IsRipeRelated), #AddTicketLink, #AddBugLink, #AddIdeaLink{
     background:rgba(0,0,0,.15) !important;
 }
