@@ -74,7 +74,7 @@
 
 h1, h2 {font-family:precious;}
 
-h3, h4, h5, h6, h7, PageModule h3 {font-family:killa !important;}
+h3, h4, h5, h6, h7, PageModule > h2 {font-family:killa !important;}
 
 input[type="text"] {border:1px solid #ffbfe4;}
 input[type="text"]:focus {text-shadow:0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black;}
