@@ -192,7 +192,7 @@ h1#PageTitle {
     color:#ff6666;
 }
 
-spriteIcon, .SpriteIcon {
+spriteIcon:not(li.App > div > spriteicon), .SpriteIcon:not(.AppCartridge) {
   filter:sepia(100%) hue-rotate(-50deg) saturate(3) !important;
 }
 
