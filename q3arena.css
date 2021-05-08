@@ -10,10 +10,7 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
     */
 
-html{cursor:var(--defaultCursor);}
-p, li, text, h1, h2, h3, h4, h5, h6, h7, b, i, .RichText.TextareaLike, input {cursor:var(--textCursor);}
-a, button, body[data-_sDeviceType="desktop"][data-_sNavItemActivation="Click"] #SecondaryNav module > icon:hover, body[data-_sDeviceType="desktop"][data-_sNavItemActivation="Click"] #SecondaryNav module > widget:hover, body[data-_sDeviceType="desktop"][data-_sNavItemActivation="Click"] #PrimaryNav module > icon:hover, body[data-_sDeviceType="desktop"][data-_sNavItemActivation="Click"] #PrimaryNav module > widget:hover,
-#GamesNavModule widget ul li {cursor:var(--pointerCursor) !important;}
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/cursor.css");
 
 
 :root{
