@@ -1,0 +1,227 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+
+html{cursor:var(--defaultCursor);}
+p, li, text, h1, h2, h3, h4, h5, h6, h7, b, i, .RichText.TextareaLike, input {cursor:var(--textCursor);}
+a, button, body[data-_sDeviceType="desktop"][data-_sNavItemActivation="Click"] #SecondaryNav module > icon:hover, body[data-_sDeviceType="desktop"][data-_sNavItemActivation="Click"] #SecondaryNav module > widget:hover, body[data-_sDeviceType="desktop"][data-_sNavItemActivation="Click"] #PrimaryNav module > icon:hover, body[data-_sDeviceType="desktop"][data-_sNavItemActivation="Click"] #PrimaryNav module > widget:hover,
+#GamesNavModule widget ul li {cursor:var(--pointerCursor) !important;}
+
+
+:root{
+    --defaultCursor:        url("https://files.gamebanana.com/bitpit/normal_85f4a.png"),default !important;
+    --textCursor:   url("https://files.gamebanana.com/bitpit/text_42755.png"),text !important;
+    --pointerCursor:   url("https://files.gamebanana.com/bitpit/link_b8d24.png"),default !important;
+    
+    --BodyBackground: url("https://files.gamebanana.com/bitpit/e0fom-e.jpg");
+    --BodyWrapperBackground:rgba(0,0,0,0.4);
+    
+    --PageTitleFontSize:64px;
+    
+    /*--PrimaryNavBackgroundColor:#660000aa;
+    --SecondaryNavBackgroundColor:#88000080;*/
+    --PrimaryNavBackgroundColor:#3a0000;
+    --SecondaryNavBackgroundColor:#3a0000cc;
+    --NavPaneBackgroundColor:#00000077;
+    
+    --ButtonBackground:#66000044;
+    --ButtonHoverBackgroundColor:#66000099;
+    
+    --LinkColor:#ff0000;
+    --LinkHoverColor:#ff5555;
+    
+ --DefaultTextColor: #ff6666;
+ --DefaultBlueColor: #6666ff;
+ --DefaultRedColor: #FF0000;
+ --DefaultRedDarkColor: #aa0000;
+ --DefaultGreenColor: #00ff00;
+ --DefaultGreenDarkColor: #00aa00;
+ --DefaultPurpleColor: #Ff00ff;
+ /*--DefaultGreyColor: #bbbbbb;*/
+ --DefaultGreyColor: #cc7777;
+ --DefaultOrangeColor: #ff7700;
+ --DefaultYellowColor: #FFff00;
+ --StateLabelBackground: #66000044;
+    
+    --InputTitleUnderlineColor: transparent;
+    --InputTextColor: #e2e2e2;
+    --InputBackgroundColor: #66000044;
+    --InputHoverBackgroundColor: #66000099;
+    --InputFocusBackgroundColor: #66000077;
+    --InputPlaceholderColor: #ff666699;
+  
+ --SubNavigatorBorderColor: #66000099;
+ --SubNavigatorActiveTabBackgroundColor: transparent;
+ --SubNavigatorActiveTabBorderColor: #880000;
+ --SubNavigatorDropdownBackgroundColor: #660000ee;
+ --SubNavigatorDropdownFontSize: 0.8em;
+ --SubNavigatorTabHoverBackgroundColor: #66000044;
+ --SubNavigatorTabHoverBorderColor: #660000cc;
+ --MasterLogBackgroundColor: #660000cc;
+}
+
+*::selection {color:#ffffffaa;background:#ff333388;}
+*::-moz-selection {color:#ffffffaa;background:#ff333388;}
+
+::-webkit-scrollbar {background:transparent;}
+
+::-webkit-scrollbar-track {
+  background-color:#66000099;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #880000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #660000ee;
+}
+
+/*partial scrollbar code for Firefox - hamstar*/
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: #880000 #66000099;
+  }
+}
+
+@font-face {
+	font-family:daggersquare;
+	src:url("https://files.gamebanana.com/bitpit/daggersquare.otf");
+}
+
+b, h1, h2, h3 {
+	font-family:daggersquare;
+}
+
+body {
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+}
+
+#BodyWrapper > #MainContent {
+    backdrop-filter: blur(5px);
+    /*border-top:1px solid #ff0000;*/
+    border-bottom:1px solid #ff0000;
+    margin-top:0px;
+    padding-top:60px;
+}
+
+#MainContentWrapper {
+    background:rgba(0,0,0,0.4);
+	border:1px solid #ff0000;
+    border-top:none;
+    border-bottom:none;
+}
+
+module > h2{
+	background: #660000;
+	color:#ff6666;
+	border:1px solid red;
+    border-bottom:none;
+    margin-bottom: 0px !important;
+    padding-bottom: 3px !important;
+    padding-top: 3px !important;
+    padding-left:8px !important;
+    font-size: 22px !important;
+    font-family: daggersquare !important;
+}
+
+module > p.Description {
+	background: #660000;
+	border:1px solid red;
+    border-bottom:none;
+    margin-bottom: 0px !important;
+    padding-bottom: 3px !important;
+    padding-top: 3px !important;
+    padding-left:8px !important;
+  color:#cc7777 !important;
+}
+
+module > h2:after {
+    display:none !important;
+}
+
+module > div.Content {
+	background: #66000044;
+	color:#ff6666;
+	border:1px solid #ff0000;
+}
+
+nav > module > pane {
+	background: #660000ee !important;
+	color:#ff6666;
+	border:1px solid #ff0000;
+}
+
+nav#PrimaryNav {
+    border-bottom:1px solid #ff0000;
+}
+
+nav#SecondaryNav {
+    border-right:1px solid #ff0000;
+}
+
+a:hover, .Linklike:hover {
+	text-decoration-line:underline !important;
+}
+
+button:not(#SearchForm > button), button.Selected, button.Expanded, .ButtonLike, .ButtonLike.Selected, .ButtonLike.Expanded {
+    border:solid 1px #ff0000;
+}
+
+.ExtendedContentButton {
+    background: var(--ButtonBackground);
+    color:var(--DefaultRedColor);
+}
+
+.ExtendedContentButton:hover {
+    background: var(--ButtonHoverBackgroundColor);
+}
+
+h1#PageTitle {
+    color:#ff6666;
+}
+
+spriteIcon, .SpriteIcon {
+  filter:sepia(100%) hue-rotate(-50deg) saturate(3) !important;
+}
+
+statelabel {
+  font-family:daggersquare;
+}
+
+.PostStamps li, ul.ui-sortable li, #BuddyChatPromoColumn, ul#ImportantLinks li a {
+    background: var(--ButtonBackground) !important;
+}
+
+ul#ImportantLinks li a {color:var(--LinkColor) !important;}
+ul#ImportantLinks li a:hover {color:black !important;background:#ff444499 !important;text-decoration: none !important;}
+/*ul#ImportantLinks li a:hover {color:var(--LinkHoverColor) !important;}*/
+
+img#GbLogo {
+        background:url("https://files.gamebanana.com/bitpit/891.png");
+        background-size:200px 48px;
+       
+        width: 200px;
+        height: 48px;
+        display:block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 200px;
+}
+
+spriteIcon.NavModuleIcon.BananaNavModuleIcon, .SpriteIcon.NavModuleIcon.BananaNavModuleIcon {
+    background: url("https://files.gamebanana.com/bitpit/1589990669_preview_quake-3-logo-png.png");
+    background-size:100%;
+    background-position: center;
+}
