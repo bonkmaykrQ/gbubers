@@ -224,3 +224,10 @@ spriteIcon.NavModuleIcon.BananaNavModuleIcon, .SpriteIcon.NavModuleIcon.BananaNa
     background-size:100%;
     background-position: center;
 }
+
+statelabel.IsRipeRelated {
+	border:1px solid #ff0000;
+	background: #88000044;
+}
+statelabel.IsRipeRelated a{color: #FFFF00;text-shadow: 0 0 0.125em black;}
+statelabel.IsRipeRelated a:hover{color: #FFFF00;text-shadow: 0 0 0.125em black;}
