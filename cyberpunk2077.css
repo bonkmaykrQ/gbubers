@@ -50,10 +50,16 @@
         --DefaultYellowColor: #fca103;
 }
 
-img#GbLogo{
-	content:url("https://files.gamebanana.com/bitpit/download.webp");
-	width: 200px;
+img#GbLogo {
+        background:url("https://files.gamebanana.com/bitpit/download.webp");
+        background-size:200px 50px;
+       
+        width: 200px;
 	height: 50px;
+        display:block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 200px;
 }
 
 nav#SecondaryNav wrapper module pane{
