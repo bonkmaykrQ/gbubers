@@ -1,0 +1,186 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+
+/*    Sakura by bonkmaykrQ    */
+/*                            */
+/*    bonkmaykrQ.github.io    */
+/*    Gamebanana:bonkmaykr    */
+
+
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/cursor.css");
+
+:root {
+    --defaultCursor:        url("https://cur.cursors-4u.net/others/oth-9/oth801.cur"),default !important;
+    --textCursor:   url("https://cur.cursors-4u.net/others/oth-9/oth801.cur"),text !important;
+    --pointerCursor:   url("https://cur.cursors-4u.net/nature/nat-11/nat1019.cur"),default !important;
+  
+  --BodyBackground:url("https://files.gamebanana.com/bitpit/ezgif-6-74a21fe5c0c5.gif");
+  --BodyWrapperBackground:#ff7777cc;
+  
+  --ButtonBackground:#ff5555ff;
+  --ButtonHoverBackgroundColor:#ff4444ff;
+  
+  --InputBackgroundColor:#ff555544;
+  --InputHoverBackgroundColor:#ff444477;
+  --InputFocusBackgroundColor:#ff5555aa;
+  --InputPlaceholderColor:black;
+  
+  --PrimaryNavBackgroundColor:#ffcccccc;
+  --SecondaryNavBackgroundColor:#ffcccccc;
+  --NavPaneBackgroundColor:#ffffff44;
+  
+  --NavUpdatesIndicatorColor:#ff5555ff;
+  --ModuleBorderColor:transparent;
+  --ModuleTitleUnderlineColor:transparent;
+  
+  --DefaultTextFontFamily: quicksand;
+--DefaultTechnicalFontFamily: "IBM Plex Mono", monospace;
+--DefaultTextColor: #111111;
+--DefaultBlueColor: #4444ff;
+--DefaultRedColor: #ff1111;
+--DefaultRedDarkColor: #440000;
+--DefaultGreenColor: #118811;
+--DefaultGreenDarkColor: #004400;
+--DefaultPurpleColor: #ff66ff;
+--DefaultGreyColor: #444444;
+--DefaultOrangeColor: #ff9966;
+--DefaultYellowColor: #ffff66;
+--StateLabelBackground: #ff6666;
+--LinkColor: #444444;
+--LinkHoverColor: #ff0000;
+  
+--SubNavigatorBackgroundColor: transparent;
+--SubNavigatorBorderColor: brown;
+/*--SubNavigatorActiveTabBackgroundColor: #ffffff23;*/
+--SubNavigatorActiveTabBorderColor: #ff7777;
+--SubNavigatorDropdownBackgroundColor: #ffaaaadd;
+--SubNavigatorTabHoverBackgroundColor: transparent;
+--SubNavigatorTabHoverBorderColor: white;
+--MasterLogBackgroundColor: #ff555577;
+--MasterLogFontSize: 0.9em;
+--AuxiliaryColumnBackground: rgba(255,255,255,0.03);
+--AuxiliaryColumnBorder: none;
+--AuxiliaryColumnModuleBorderColor: transparent;
+  
+  scrollbar-color: #ffffff77 #ff777799;   /* scroll thumb and track */
+}
+
+/*these were originally the other way around, but this looks good too*/
+::-webkit-scrollbar-track {
+  background-color: #ff777799;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffffff77;
+}
+
+@font-face {
+  src:url("https://files.gamebanana.com/bitpit/quicksand-variablefont_wght.ttf");
+  font-family:quicksand;
+}
+
+::selection {
+  color:white !important;
+  background:#ff5555ff !important;
+}::moz-selection {
+  color:white !important;
+  background:#ff5555ff !important;
+}
+
+*:not(maticon) {
+  font-family: quicksand;
+  text-shadow: 0px 0px 1.2px #000000;
+}
+
+module > h2 {
+  font-family: quicksand !important;
+  text-shadow: 0px 0px 1.2px #000000;
+  margin-bottom:5px !important;
+}
+
+body {
+  background-position: center;
+  background-size:cover;
+  background-attachment:fixed;
+}
+
+module > div.Content {
+  background:#ffcccc99;
+  border:4px outset #ffffff77;
+}
+
+statelabel {
+  color:white !important;
+}
+
+dt {
+  color:var(--DefaultGreyColor);
+}
+
+#Breadcrumb{background:#ffffff77;}
+
+spriteicon:not(.AppCartridgeBack):not(.AppCartridge), .SpriteIcon:not(.AppCartridgeBack):not(.AppCartridge) {
+  filter:sepia(1) hue-rotate(300deg) !important;
+}
+
+#MainContent {
+  margin-top:0px;
+  padding-top:60px;
+}
+
+img#GbLogo {
+  filter:sepia(1) hue-rotate(300deg) !important;
+}
+
+#MainContentHeader.Fixed {
+  background:#ffcccccc !important;
+  backdrop-filter:blur(2px);
+}
+
+#PrimaryNav, #SecondaryNav, pane, .PostStamps > li {
+  backdrop-filter:blur(2px);
+}
+
+pane:not(#SecondaryNav pane) {
+  filter:drop-shadow(0px 0px 5px #ffffff);
+}
+
+.ExtendedContentButton, .PostStamps > li, #BuddyChatPromoColumn {background:var(--ButtonBackground) !important;color:white !important;}
+.ExtendedContentButton:hover {background:var(--ButtonHoverBackgroundColor);}
+
+.ButtonLike, button:not(#SearchForm button), .ExtendedContentButton, .PostStamps > li, #BuddyChatPromoColumn {
+  border:2px solid #ffffffcc /*1px solid #ff9999ee*/;
+  border-radius:5px;
+}
+
+nav ul li itemcount {
+  color:white;
+}
+
+#ResponsibilitiesModule li {
+  border:none !important;
+  box-shadow: none;
+}
+
+.BroadcastStatusWrapper, .MarkAllAsSeen {
+  filter:drop-shadow(0px 0px 1px red);
+}
+
+.BananaTip {
+  color:white;
+}
+
+#NavOptionsUiThemeList li, .MainForm fieldset .UploadedFiles li {
+  background: #ff777799 !important;
+}
+
+#ImportantLinks > li > a {background:#ff777799 !important;}
+#ImportantLinks > li > a:hover {background:#ff5555cc !important;}
