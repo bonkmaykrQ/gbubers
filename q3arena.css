@@ -65,6 +65,17 @@
  --SubNavigatorTabHoverBackgroundColor: #66000044;
  --SubNavigatorTabHoverBorderColor: #660000cc;
  --MasterLogBackgroundColor: #660000cc;
+    
+    /*may 14th 2021*/
+    --AuxiliaryColumnBackground: transparent;
+--AuxiliaryColumnBorder: none;
+--AuxiliaryColumnModuleBorderColor: transparent;
+    
+    /*--AdvancedElementTabsBackgroundColor: transparent;
+--AdvancedElementTabsBorderColor: #0e1317;
+--AdvancedElementTabsActiveTabFontColor: #FF5E9D;
+--ActiveTabBorderColor: #FF5E9D;
+--ActiveTabBackgroundColor: rgba(255,94,157,0.08);*/
 }
 
 *::selection {color:#ffffffaa;background:#ff333388;}
