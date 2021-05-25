@@ -1,0 +1,17 @@
+img#GbLogo {
+        background:var(--logoUrl);
+        background-size:var(--logoX) var(--logoY);
+       
+        width: var(--logoX);
+        height: var(--logoY);
+        display:block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: var(--logoX);
+}
+
+spriteIcon.NavModuleIcon.BananaNavModuleIcon, .SpriteIcon.NavModuleIcon.BananaNavModuleIcon {
+    background:var(--miniLogoUrl);
+    background-size:100%;
+    background-position: center;
+}
