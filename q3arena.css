@@ -107,6 +107,11 @@
 	src:url("https://files.gamebanana.com/bitpit/daggersquare.otf");
 }
 
+@font-face {
+	font-family:handel;
+	src:url("https://files.gamebanana.com/bitpit/handel_gothic.ttf");
+}
+
 b, h1, h2, h3 {
 	font-family:daggersquare;
 }
