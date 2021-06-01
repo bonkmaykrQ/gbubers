@@ -184,3 +184,4 @@ nav ul li itemcount {
 
 #ImportantLinks > li > a {background:#ff777799 !important;}
 #ImportantLinks > li > a:hover {background:#ff5555cc !important;}
+.Spoiler:not(:hover) {color:rgba(0,0,0,0) !important;text-shadow: 0px 0px 0px rgba(0,0,0,0) !important;}
