@@ -1,0 +1,155 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+
+/*    Monsters by bonkmaykrQ    */
+/*                              */
+/*     bonkmaykrQ.github.io     */
+/*     Gamebanana:bonkmaykr     */
+
+@font-face {
+  src:url("https://files.gamebanana.com/bitpit/monsterfriendfore.otf");
+  font-family: monster;
+}
+
+:root {
+  --BodyBackground:url("https://files.gamebanana.com/bitpit/battlegrid2.png");
+  --BodyWrapperBackground:#000000cc;
+  --LinkColor:#ff5555;
+  --LinkHoverColor:#ffff00;
+  --ModuleTitleFontFamily:monster;
+  --ModuleTitleUnderlineColor:transparent;
+  --AuxiliaryColumnBorder:none;
+  --AuxiliaryColumnBackground:transparent;
+  --ModuleBorderColor:transparent;
+  --PrimaryNavBackgroundColor:#000000;
+  --SecondaryNavBackgroundColor:#000000;
+  --NavPaneBackgroundColor:black;
+  
+    --InputTitleUnderlineColor: transparent;
+    --InputTextColor: #ffffff;
+    --InputBackgroundColor: #222222;
+    --InputHoverBackgroundColor: #885500;
+    --InputFocusBackgroundColor: #bb7700;
+    --InputPlaceholderColor: #aaaaaa;
+  
+ --SubNavigatorBorderColor: #ff8800;
+ --SubNavigatorActiveTabBackgroundColor: transparent;
+ --SubNavigatorActiveTabBorderColor: #ffffff;
+ --SubNavigatorDropdownBackgroundColor: #000000;
+ --SubNavigatorDropdownFontSize: 0.8em;
+ --SubNavigatorTabHoverBackgroundColor: #ff880080;
+ --SubNavigatorTabHoverBorderColor: #ffffff;
+ --MasterLogBackgroundColor: #660000cc;
+  
+   --DefaultTextColor: #ffffff;
+ --DefaultBlueColor: #6666ff;
+ --DefaultRedColor: #ff4400;
+ --DefaultRedDarkColor: #ff0000;
+ --DefaultGreenColor: #00ff00;
+ --DefaultGreenDarkColor: #00aa00;
+ --DefaultPurpleColor: #ff00ff;
+ --DefaultGreyColor: #cc7777;
+ --DefaultOrangeColor: #ff9900;
+ --DefaultYellowColor: #ffff00;
+ --StateLabelBackground: #ff8800;
+}
+
+#PrimaryNav {
+  border: 3px double #ff8800;
+  border-top:none;
+  border-radius:0px 0px 10px 10px;
+}
+
+#SecondaryNav {
+  border:2px solid #ff8800;
+  border-top:none;
+}
+
+body {
+  background-position: center;
+  background-attachment: fixed;
+  background-size:cover;
+}
+
+h1, h2, h3 {
+  font-family: monster;
+}
+
+button:not(#SearchForm button), .ButtonLike, #ImportantLinks a {
+  background: black !important;
+}
+
+button:not(#SearchForm button):not(.IconOnlyButton), .ButtonLike:not(.IconOnlyButton), #ImportantLinks a {
+  height:50px;
+  border-radius: 10px;
+  padding-left:10px;
+  padding-right:10px;
+  border:3px double #ff8800;
+  font-family: monster;
+  color:#ff8800 !important;
+}
+
+button:not(#SearchForm button):hover, .ButtonLike:hover, #ImportantLinks a:hover {
+  background: #444444 !important;
+}
+
+button:not(#SearchForm button):not(.IconOnlyButton):hover, .ButtonLike:not(.IconOnlyButton):hover, #ImportantLinks a:hover {
+  border-radius: 10px;
+  padding-left:10px;
+  padding-right:10px;
+  border:3px double black;
+  font-family: monster;
+  color:black !important;
+  background:#ff8800 !important;
+}
+
+#ImportantLinks a {height: 25px;}
+
+::-webkit-scrollbar-track {
+  background-color:#ff8800;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #444444;
+}
+
+/*partial scrollbar code for Firefox - hamstar*/
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: #000000 #ff8800;
+  }
+}
+
+*::selection {color:black;background:#ff8800;}
+*::-moz-selection {color:black;background:#ff8800;}
+
+.PostStamps li {background:#ff8800 !important;color:black !important;}
+
+statelabel:not(.IsRipeRelated) {color:black !important;background:#ff8800 !important;}
+
+img#GbLogo {
+        background:url("https://files.gamebanana.com/bitpit/801de029e9e46e5ba435ab7b7b21e71e.png");
+        background-size:400px 48px;
+       
+        width: 400px;
+        height: 48px;
+        display:block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 400px;
+}
+
+* {cursor:url("https://files.gamebanana.com/bitpit/60bc0181bdc87.cur"), default !important;}
