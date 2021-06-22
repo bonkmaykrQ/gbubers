@@ -1,0 +1,203 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+
+/*    Red Sands  by bonkmaykrQ    */
+/*    borrows code from Sakura    */
+/*    https://bonkmaykr.xyz       */
+/*    Gamebanana:bonkmaykr        */
+
+
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/cursor.css");
+
+:root {
+    --defaultCursor:        url("https://files.gamebanana.com/bitpit/use108.cur"),default !important;
+    --textCursor:   url("https://files.gamebanana.com/bitpit/use108.cur"),text !important;
+    --pointerCursor:   url("https://files.gamebanana.com/bitpit/use102.cur"),default !important;
+  
+  --BodyBackground:url("https://files.gamebanana.com/bitpit/desert_cliffs_hires.png");
+  --BodyWrapperBackground:#99110099;
+  
+  --ButtonBackground:#ff8c27ff;
+  --ButtonHoverBackgroundColor:#ff5c00ff;
+  
+  --InputBackgroundColor:#ffffff44;
+  --InputHoverBackgroundColor:#ffcc7799;
+  --InputFocusBackgroundColor:#ff5c00ff;
+  --InputPlaceholderColor:black;
+  
+  --PrimaryNavBackgroundColor:#ff990099;
+  --SecondaryNavBackgroundColor:#ff990099;
+  --NavPaneBackgroundColor:#ffffff07;
+  
+  --NavUpdatesIndicatorColor:#ffffff8f;
+  --ModuleBorderColor:transparent;
+  --ModuleTitleUnderlineColor:transparent;
+  --AuxilliaryColumnBackground:transparent;
+  
+  
+--DefaultTechnicalFontFamily: "IBM Plex Mono", monospace;
+--DefaultTextColor: #111111;
+--DefaultBlueColor: #4444ff;
+--DefaultRedColor: #ff1111;
+--DefaultRedDarkColor: #440000;
+--DefaultGreenColor: #00cc00;
+--DefaultGreenDarkColor: #008800;
+--DefaultPurpleColor: #cf44cf;
+--DefaultGreyColor: #444422;
+--DefaultOrangeColor: #ff4411;
+--DefaultYellowColor: #ff6666;
+--StateLabelBackground: #ff8c27ff;
+--LinkColor: #ffcf00;
+--LinkHoverColor: #ffaf30;
+  
+--SubNavigatorBackgroundColor: transparent;
+--SubNavigatorBorderColor: brown;
+/*--SubNavigatorActiveTabBackgroundColor: #ffffff23;*/
+--SubNavigatorActiveTabBorderColor: #ffcc00ff;
+--SubNavigatorDropdownBackgroundColor: #ff990099;
+--SubNavigatorTabHoverBackgroundColor: transparent;
+--SubNavigatorTabHoverBorderColor: #ff5c00ff;
+--MasterLogBackgroundColor: #ffcc2299;
+--MasterLogFontSize: 0.9em;
+--AuxiliaryColumnBackground: rgba(255,255,255,0.03);
+--AuxiliaryColumnBorder: none;
+--AuxiliaryColumnModuleBorderColor: transparent;
+  
+  scrollbar-color: #ffcc7799 #ff5c00ff;   /* scroll thumb and track */
+}
+
+/*these were originally the other way around, but this looks good too*/
+::-webkit-scrollbar-track {
+  background-color: #ffcc7799;
+}
+::-webkit-scrollbar-thumb {
+  background: #ff5c00ff;
+}
+
+@font-face {
+  src:url("https://files.gamebanana.com/bitpit/starborn.ttf");
+  font-family:quicksand;
+}
+
+::selection {
+  color:#ffcc00ff !important;
+  background:#ff5c00ff !important;
+}::moz-selection {
+  color:#ffcc00ff !important;
+  background:#ff5c00ff !important;
+}
+
+h1, h2, h3 {
+  font-family: quicksand;
+  text-shadow: 0px 0px 1.2px #000000;
+  line-height: 1em;
+}
+
+module > h2 {
+  font-family: quicksand !important;
+  text-shadow: 0px 0px 1.2px #000000;
+  margin-bottom:5px !important;
+}
+
+body {
+  background-position: center;
+  background-size:cover;
+  background-attachment:fixed;
+}
+
+module > div.Content {
+  background:#ff990099;
+  border:4px outset #fff90039;
+}
+
+statelabel {
+  color:white !important;
+}
+
+dt {
+  color:var(--DefaultGreyColor);
+}
+
+#Breadcrumb{background:#ff770099;}
+
+spriteicon:not(.AppCartridgeBack):not(.AppCartridge), .SpriteIcon:not(.AppCartridgeBack):not(.AppCartridge) {
+  filter:sepia(1) hue-rotate(325deg) saturate(5) !important;
+}
+
+#MainContent {
+  margin-top:0px;
+  padding-top:60px;
+}
+
+img#GbLogo {
+  filter:sepia(1) hue-rotate(325deg) saturate(5) !important;
+}
+
+#MainContentHeader.Fixed {
+  background:#ff990099 !important;
+  backdrop-filter:blur(2px);
+}
+
+#PrimaryNav, #SecondaryNav, pane, .PostStamps > li {
+  backdrop-filter:blur(2px);
+}
+
+pane:not(#SecondaryNav pane) {
+  filter:drop-shadow(0px 0px 5px #ff7700) drop-shadow(0px 0px 5px #ff7700) drop-shadow(0px 0px 5px #ff7700) drop-shadow(0px 0px 5px #ff7700) drop-shadow(0px 0px 5px #ff7700);
+}
+
+.ExtendedContentButton, .PostStamps > li, #BuddyChatPromoColumn {background:var(--ButtonBackground) !important;color:black !important;}
+.ExtendedContentButton:hover {background:var(--ButtonHoverBackgroundColor);}
+
+.ButtonLike, button:not(#SearchForm button), .ExtendedContentButton, #BuddyChatPromoColumn {
+  border:3px double #ffffff44 /*1px solid #ff9999ee*/;
+  border-radius:5px;
+  color:black !important;
+}
+
+.PostStamps > li {
+  /*border-left:10px solid #ffffff44 !important;*/
+  border-left-width: 10px !important;
+  border-radius:25px !important;
+}
+
+nav ul li itemcount {
+  color:white;
+}
+
+#ResponsibilitiesModule li {
+  border:none !important;
+  box-shadow: none;
+}
+
+.BroadcastStatusWrapper, .MarkAllAsSeen {
+  filter:drop-shadow(0px 0px 1px red) drop-shadow(0px 0px 1px yellow);
+}
+
+.BananaTip {
+  color:white;
+}
+
+#NavOptionsUiThemeList li, .MainForm fieldset .UploadedFiles li {
+  background: #ff990099 !important;
+}
+
+#ImportantLinks > li > a {background:#ff990099 !important;}
+#ImportantLinks > li > a:hover {background:#ff790099 !important;}
+
+#MainContent {
+  backdrop-filter: blur(5px);
+}
+
+#SecondaryNav a, #SecondaryNav a span {text-shadow: 0px 0px 2.5px black, 0px 0px 2.5px black;}
+
+#SubNavigator li div {color:#ffc700;}
