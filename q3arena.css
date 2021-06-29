@@ -247,3 +247,5 @@ statelabel.IsRipeRelated {
 }
 statelabel.IsRipeRelated a{color: #FFFF00;text-shadow: 0 0 0.125em black;}
 statelabel.IsRipeRelated a:hover{color: #FFFF00;text-shadow: 0 0 0.125em black;}
+
+.IsHonorary {color:white !important;background:#ff0000;text-shadow:none;}
