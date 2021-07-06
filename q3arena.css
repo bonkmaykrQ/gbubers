@@ -182,8 +182,18 @@ nav#PrimaryNav {
     border-bottom:1px solid #ff0000;
 }
 
-nav#SecondaryNav {
+body[data-_ssecondarynavposition="Left"] > wrapper > nav#SecondaryNav {
     border-right:1px solid #ff0000;
+}
+
+body[data-_ssecondarynavposition="Right"] > wrapper > nav#SecondaryNav {
+    border-left:1px solid #ff0000;
+}
+
+body[data-_ssecondarynavmode="Float"] > wrapper > nav#SecondaryNav {
+    border-bottom:1px solid #ff0000;
+    /*border-right:1px solid #ff0000;
+    border-left:1px solid #ff0000;*/
 }
 
 a:hover, .Linklike:hover {
