@@ -1,0 +1,216 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+
+/* GoldSrc by bonkmaykr   */
+/*                        */
+/* bonkmaykr.xyz          */
+/* Gamebanana:bonkmaykr   */
+
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/cursor.css");
+
+@font-face {
+    font-family: xirod;
+    src:url("https://files.gamebanana.com/bitpit/xirod.ttf");
+}
+
+@font-face {
+    font-family:basic;
+    src:url("https://files.gamebanana.com/bitpit/personifieduxregular_1.ttf");
+}
+
+:root {
+  --defaultCursor:   url("https://files.gamebanana.com/bitpit/greentrimnormal.png") 0 0,default !important;
+  --pointerCursor:   url("https://files.gamebanana.com/bitpit/greentrimnormal-1.png") 0 0,default !important;
+  /*--pointerCursor:   url("https://files.gamebanana.com/bitpit/15a.cur") 14 2,default !important;*/
+	
+ --DefaultTextColor: #ffffff;
+ --DefaultBlueColor: #aaaaff;
+ /*--DefaultRedColor: #fe668f;*/
+ --DefaultRedColor: #ff5555;
+ --DefaultRedDarkColor: #ff0000;
+ --DefaultGreenColor: #779977;
+ --DefaultGreenDarkColor: #00ff00;
+ --DefaultPurpleColor: #fc4b7f;
+ --DefaultGreyColor: #9f9686;
+ --DefaultOrangeColor: #f89746;
+ --DefaultYellowColor: #ffff00;
+    
+ --StateLabelBackground: #4c5844;
+    
+ --LinkColor: #f89746;
+ --LinkHoverColor: #ffffffcc;
+    
+ --BodyBackground: #3f4537;
+ --BodyWrapperBackground: transparent; /*#3e36ab66*/
+ 
+ --VisibleHiddenColumnBackground: #3e36abdd;
+
+ --NavPaneBackgroundColor: #4c5844;
+ --PrimaryNavBottomBorder: 0px transparent;
+ --PrimaryNavBackgroundColor: #4c5844;
+ --PrimaryNavHeight: 60px;
+ --PrimaryNavFontSize: 1em;
+ --SecondaryNavBackgroundColor: #4c5844;
+ --NavUpdatesIndicatorColor: #f89746;
+ --NavPaneTitleFontFamily: var(--DefaultTextFontFamily);
+    
+ --PageTitleFontSize: 3em;
+ --PageTitleFontSize800: 2.5em;
+ --PageTitleFontSize600: 2em;
+ --PageTitleFontSize400: 1.5em;
+ --PageTitleColor: white;
+ --PageDescriptionFontSize: 1rem;
+ --BreadcrumbFontSize: 0.8em;
+ --FixedPageTitleFontSize: 1em;
+ --FixedMainContentHeaderBackground: #151d23 url(data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+ 
+ --SubNavigatorBackgroundColor: transparent;
+ --SubNavigatorBorderColor: transparent;
+ --SubNavigatorActiveTabBackgroundColor: transparent;
+ --SubNavigatorActiveTabFontColor: #fc4b7f;
+ --SubNavigatorActiveTabBorderColor: #f89746;
+ --SubNavigatorDropdownBackgroundColor: #4c5844;
+ --SubNavigatorTabHoverBackgroundColor: #4c5844;
+ --SubNavigatorTabHoverBorderColor: white;
+    
+ --MasterLogBackgroundColor: #4c5844;
+    
+ --AuxiliaryColumnBackground: transparent;
+ --AuxiliaryColumnBorder: 0px solid transparent;
+ --AuxiliaryColumnModuleBorderColor: transparent;
+    
+ --ModuleTitleFontFamily: var(--DefaultTextFontFamily);
+ --ModuleTitleUnderlineColor: transparent;
+ --ModuleDescriptionFontColor: #ffffff;
+ --ModuleBorderColor: transparent;
+    
+ --InputTitleUnderlineColor: #4c5844;
+ --InputTextColor: #ffffff;
+ --InputBackgroundColor: #2c3228;
+ --InputHoverBackgroundColor: #2c3228;
+ --InputFocusBackgroundColor: #2c3228;
+ --InputPlaceholderColor: #ffffff;
+    
+ --ButtonFontColor: #ffffff;
+ --ButtonBackground: #4c5844;
+ --ButtonFontFamily: var(--DefaultTextFontFamily);
+ --ButtonHoverFontColor: #ffffff;
+ --ButtonHoverBackgroundColor: #98a868/*#a8c888*/;
+    
+ --PaginatorPageNumberBackgroundColor: #0b1013;
+ --AdvancedElementTabsBackgroundColor: transparent;
+ --AdvancedElementTabsBorderColor: #0e1317;
+ --AdvancedElementTabsActiveTabFontColor: #FF5E9D;
+    
+ --ActiveTabBorderColor: #f89746;
+ --ActiveTabBackgroundColor: rgba(255,94,157,0.08);
+    
+ --TableColumnTitleFontColor: #ffffff8a;
+ --TableColumnTitleBackground: #ffffff14;
+ --EmbeddedWindowBackgroundColor: rgba(0,0,0,0.15)
+}
+
+.PageModule > h2 {
+    /*background:url("https://files.gamebanana.com/bitpit/launchhammer-1-1.png"), url("https://files.gamebanana.com/bitpit/launchhammer-12.png");*/
+    background:url("https://files.gamebanana.com/bitpit/launchhammer-1-1-1.png"), #4c5844;
+    background-size: auto 100%, 100% 100%;
+    background-position: center right, center center;
+    background-repeat: no-repeat;
+    padding-left:10px;
+    padding-top:5px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.PageModule {
+    background:#4c5844;
+    padding: 0;
+    margin: .10em 1em 1em 1em;
+    border:2px outset #86927e;
+}
+
+.PageModule > .Content {
+    background:#3f4537;
+    padding: .5em;
+    margin: .5em;
+    /*border:5px inset #55665577;*/
+    border:5px inset #55665577;
+}
+
+.ThirdPartyModule { /*fix sizing inconsistencies - removed since app developers are implementing fixes themselves and it causes conflict with one or the other*/
+    /*margin-left:4px;
+    margin-right:4px;*/
+}
+
+/*****************************************************************************************/
+/*replaces above fix -- just target modules known to have broken formatting with the uber*/
+#tpm__sLatestProfileVisitors, #tpm__sBmAudio, #tpm__sBmGuardian {
+    margin-left:4px;
+    margin-right:4px;
+}
+#LatestProfileVisitorsModule > h2 {background: transparent;}
+/*****************************************************************************************/
+
+#MainContentHeader.Fixed {background:#4c5844 !important;}
+
+statelabel:not(.IsRipeRelated):not(.IsRipeSupporter) {color:white !important;}
+
+.PostStamps li {
+    background:#4c5844 !important;
+    color:#aacc99 !important;
+}
+
+.ExtendedContentButton {
+    background:#4c5844 !important;
+}
+
+#ContentGrid {padding-top:10px;}
+
+
+.Avatar.Online::after, .MemberLink.Online::after {--DefaultGreenColor: #f89746;}
+
+button:not(#SearchForm button), .ButtonLike, #MasterLog log {
+    border:2px outset #6c7864dd;
+    border-radius: 0px;
+}
+
+button:not(#SearchForm button):hover, .ButtonLike:hover, .ButtonLike.Selected {
+    background:var(--ButtonHoverBackgroundColor) !important;
+    border:2px outset #9ca894dd;
+    border-radius: 0px;
+}
+
+input[type="text"]{
+    border:2px inset #6c7864dd;
+    border-radius: 0px;
+}
+
+#ImportantLinks li a {background:#4c5844 !important;}
+#ImportantLinks li a:hover {background:#f89746 !important;}
+
+.ResponsibilitiesModule li {border-color:#6f8067 !important;}
+
+::selection {
+       background:#f89746;
+       color:black;
+}
+
+::-webkit-scrollbar-track {background:#3f4537;}::-webkit-scrollbar-thumb {background:#4c5844;}
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: #4c5844 #3f4537;
+  }
+}
+
+#BuddyChatPromoColumn {background:#3f4537 !important;border:2px inset #55665577;border-radius:0px;}
+
+#SecondaryNav.Expanded module.Selected icon {background:#3f4537;}
