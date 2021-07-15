@@ -22,16 +22,16 @@
 
 @font-face {
     font-family:pixelated;
-    src:url(https://files.gamebanana.com/bitpit/tom_s_upic.ttf);
+    src:url(https://files.gamebanana.com/bitpit/tom_s_upic_12664.ttf);
 }
 
 @font-face {
   font-family:statelabel;
   src:url(https://files.gamebanana.com/bitpit/tom_s_upic.ttf);
 }
-h1 {font-size:28px;font-family:pixelated !important;font-size-adjust: 0.16;text-transform: lowercase;line-height: 0.8em;}
-h2 {font-size:24px;font-family:pixelated !important;font-size-adjust: 0.18;text-transform: lowercase;line-height: 1em;}
-h3 {font-size:18px;font-family:pixelated !important;font-size-adjust: 0.18;text-transform: lowercase;line-height: 1em;}
+h1 {font-size:28px;font-family:pixelated !important;text-transform: lowercase;line-height: 1.1em;}
+h2 {font-size:24px;font-family:pixelated !important;text-transform: lowercase;line-height: 1.1em;}
+h3 {font-size:18px;font-family:pixelated !important;text-transform: lowercase;line-height: 1.1em;}
 
 .RichText h1 {font-size:28px;font-family:Abel !important;}
 .RichText h2 {font-size:22px;font-family:Abel !important;}
@@ -137,15 +137,15 @@ pane {background:linear-gradient(0deg, #22222244 40%, #000000cc 100%), repeating
 ::-webkit-scrollbar {background:transparent;}
 
 ::-webkit-scrollbar-track {
-  background-color:#005050;
+  background-color:#000000;
 }
  
 ::-webkit-scrollbar-thumb {
-  background-color: #80a0a0;
+  background-color: #ffcc00;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #acd0d0;
+  background-color: #ffff88;
 }
 
 ::-moz-selection { /* Code for Firefox */
