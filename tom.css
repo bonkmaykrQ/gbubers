@@ -1,0 +1,171 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+
+/* tom by bonkmaykr     */
+/*                      */
+/* bonkmaykr.xyz        */
+/* Gamebanana:bonkmaykr */
+
+@font-face {
+    font-family:Abel;
+    src:url(https://files.gamebanana.com/bitpit/nunito-regular.ttf);
+}
+
+@font-face {
+    font-family:pixelated;
+    src:url(https://files.gamebanana.com/bitpit/tom_s_upic.ttf);
+}
+
+@font-face {
+  font-family:statelabel;
+  src:url(https://files.gamebanana.com/bitpit/tom_s_upic.ttf);
+}
+h1 {font-size:28px;font-family:pixelated !important;font-size-adjust: 0.16;text-transform: lowercase;line-height: 0.8em;}
+h2 {font-size:24px;font-family:pixelated !important;font-size-adjust: 0.18;text-transform: lowercase;line-height: 1em;}
+h3 {font-size:18px;font-family:pixelated !important;font-size-adjust: 0.18;text-transform: lowercase;line-height: 1em;}
+
+.RichText h1 {font-size:28px;font-family:Abel !important;}
+.RichText h2 {font-size:22px;font-family:Abel !important;}
+.RichText h3 {font-size:16px;font-family:Abel !important;}
+
+module > h2 {
+    font-family:pixelated !important;
+    font-size:21px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    
+}
+nav > wrapper > module > pane > header > strong {
+    /*font-size:30px;*/
+    /*margin-left:5px;*/
+    
+    font-family:var(--NavPaneTitleFontFamily);
+    font-size:var(--NavPaneTitleFontSize);
+}
+
+body {
+    background:repeating-linear-gradient(-45deg, #000000ff 0px 8px, #ffe400ff 10px 20px, #000000ff 20px 22px) !important;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position: center top;
+}
+
+#BodyWrapper {
+    font-family:Abel;
+    background:#000000aa;
+}
+
+#MainContent {
+    margin-top:0px;
+    padding-top:var(--PrimaryNavHeight);
+}
+
+#ResponsibilitiesModule div dl dd ul li {
+    border:none;
+    box-shadow:none;
+}
+
+pane article {
+	background:rgba(0, 0, 0, 0.6);
+}
+
+pane {background:linear-gradient(0deg, #22222244 40%, #000000cc 100%), repeating-linear-gradient(-45deg, #000000ff 0px 8px, #ffe400ff 10px 20px, #000000ff 20px 22px) !important;}
+
+:root {
+    --NavUpdatesIndicatorColor:#ff6600;
+
+    --NavPaneBackgroundColor:#00000088;
+    --PrimaryNavBackgroundColor:linear-gradient(0deg, #00000000 0%, #ffffff88 100%), repeating-linear-gradient(-45deg, #000000ff 0px 8px, #ffe400ff 10px 20px, #000000ff 20px 22px) !important;
+    --SecondaryNavBackgroundColor:linear-gradient(0deg, #22222244 40%, #000000cc 100%), repeating-linear-gradient(-45deg, #000000ff 0px 8px, #ffe400ff 10px 20px, #000000ff 20px 22px) !important;
+
+    --LinkColor:#ffff00; /*#80a0a0*/
+    --LinkHoverColor:#ff6600;
+
+    --ButtonBackground:#888800;
+    --ButtonHoverBackgroundColor:#ffcc00;
+    --ButtonFontColor:white;
+    --ButtonHoverFontColor:black;
+
+    --PageTitleFontSize:4em;
+    --PageTitleColor:#ffff00;
+
+    --SubNavigatorBorderColor:#00000088;
+    --SubNavigatorActiveTabBorderColor:#ffff00;
+    --SubNavigatorTabHoverBorderColor:white;
+    --SubNavigatorDropdownBackgroundColor: #888800;
+
+    --InputTextColor: #ffffff;
+    --InputBackgroundColor: #5f5f00dd;
+    --InputHoverBackgroundColor: #666600dd;
+    --InputFocusBackgroundColor: #5f5f00ff;
+    --InputPlaceholderColor: #ffffff88;
+
+    --DefaultTextColor: #fdfdfd;
+    --DefaultBlueColor: #a0c4de;
+    --DefaultRedColor: #ff6600;
+    --DefaultRedDarkColor: #693539;
+    --DefaultGreenColor: #44cc00;
+    --DefaultGreenDarkColor: #424942;
+    --DefaultPurpleColor: #ffb0cf;
+    --DefaultGreyColor: #c6c6c6;
+    --DefaultOrangeColor: #ff8800;
+    --DefaultYellowColor: #ffff00;
+    --StateLabelBackground: #666600/*#55cdd477*/;
+    
+    --ModuleTitleUnderlineColor:transparent;
+}
+
+.ExtendedContentButton {
+  background: var(--ButtonBackground);
+  color: var(--ButtonFontColor);
+}
+
+.ExtendedContentButton:hover {
+  background: var(--ButtonHoverBackgroundColor);
+  color: var(--ButtonHoverFontColor);
+}
+
+::-webkit-scrollbar {background:transparent;}
+
+::-webkit-scrollbar-track {
+  background-color:#005050;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #80a0a0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #acd0d0;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: #ffcc00;
+
+
+}::selection {
+  color: black;
+  background: #ffcc00;
+}
+
+#GbLogo, nav > module img {
+  filter:drop-shadow(0px 0px 3px black) !important;
+}
+
+/*partial scrollbar code for Firefox - hamstar*/
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: #ffcc00 #000000;
+    /*scrollbar-width: thin;*/
+  }
+}
