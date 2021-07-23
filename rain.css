@@ -160,3 +160,8 @@ module#IdentityModule div.Content {
     background: url("https://files.gamebanana.com/bitpit/50e81b57409bbb13fc0749c3b2465fa5.gif");
     text-shadow: 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black, 0px 0px 3px black;
 }
+
+#MainContent {
+  margin-top:0px;
+  padding-top:var(--PrimaryNavHeight);
+}
