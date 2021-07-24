@@ -216,12 +216,6 @@ img#GbLogo {
         padding-left: 340px;
 }
 
-spriteIcon.NavModuleIcon.BananaNavModuleIcon, .SpriteIcon.NavModuleIcon.BananaNavModuleIcon {
-    background: url("https://files.gamebanana.com/bitpit/1589990669_preview_quake-3-logo-png.png");
-    background-size:100%;
-    background-position: center;
-}
-
 statelabel.IsRipeRelated {
 	border:1px solid #ff0000;
 	background: #00008844;
