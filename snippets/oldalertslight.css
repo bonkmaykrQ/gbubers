@@ -1,7 +1,7 @@
 /*This is for ubers that are incredibly bright.
 For anything else, use oldalertsdark.css*/
 .Notification.Unseen {
-  background:rgba(0, 0, 0, 0.03);
+  background:rgba(0, 0, 0, 0.03) !important;
 }
 .Notification, .Notification .Messages > * + * {
   border-top-color:rgba(0, 0, 0, 0.1) !important;
