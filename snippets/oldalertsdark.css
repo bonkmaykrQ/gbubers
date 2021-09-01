@@ -1,0 +1,6 @@
+.Notification.Unseen {
+  background:rgba(255, 255, 255, 0.05);
+}
+.Notification, .Notification .Messages > * + * {
+  border-top-color:rgba(255, 255, 255, 0.1) !important;
+}
