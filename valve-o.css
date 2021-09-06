@@ -81,7 +81,7 @@ pane article {
 	background:rgba(255, 84, 0, 0.075);
 }
 
-pane, #MasterLog logs log {
+pane, #MasterLog logs log, #BuddyChatPromoColumn {
   background:rgba(0, 0, 0, 0.85) !important;
   backdrop-filter: blur(7px);
   border:2px solid #ff8400 !important;
