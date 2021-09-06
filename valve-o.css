@@ -81,11 +81,11 @@ pane article {
 	background:rgba(255, 84, 0, 0.075);
 }
 
-pane {
+pane, #MasterLog logs log {
   background:rgba(0, 0, 0, 0.85) !important;
   backdrop-filter: blur(7px);
-  border:5px solid #ff8400 !important;
-  border-radius:15px;
+  border:2px solid #ff8400 !important;
+  border-radius:10px;
 }
 
 #PrimaryNav {
