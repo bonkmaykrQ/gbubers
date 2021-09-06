@@ -16,6 +16,8 @@
 /* bonkmaykr.xyz             */
 /* Gamebanana:bonkmaykr      */
 @import url("https://bonkmaykrq.github.io/gbubers/snippets/oldalertsdark.css");
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/scanlines.css");
+@import url("https://bonkmaykr.xyz/index/assets/css/gamebanana/scanlines.css");/*backup version -- github seemed to be having issues with this one*/
 
 @font-face {
     font-family:Abel;
@@ -109,7 +111,7 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 }
 
 :root {
-    --NavUpdatesIndicatorColor:#ff6600;
+    --NavUpdatesIndicatorColor:#ff8400;
 
     --NavPaneBackgroundColor:#00000088;
 
