@@ -1,0 +1,289 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+
+/* Valve Orange by bonkmaykr */
+/* forked from tom           */
+/*                           */
+/* bonkmaykr.xyz             */
+/* Gamebanana:bonkmaykr      */
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/oldalertsdark.css");
+
+@font-face {
+    font-family:Abel;
+    src:url(https://files.gamebanana.com/bitpit/novasquare-regular.ttf);
+}
+
+@font-face {
+    font-family:pixelated;
+    src:url(https://files.gamebanana.com/bitpit/elysian_fields.otf);
+}
+
+@font-face {
+  font-family:statelabel;
+  src:url(https://files.gamebanana.com/bitpit/tom_s_upic.ttf);
+}
+h1 {font-size:28px;font-family:pixelated !important;text-transform: lowercase;line-height: 1.1em;}
+h2 {font-size:24px;font-family:pixelated !important;text-transform: lowercase;line-height: 1.1em;}
+h3 {font-size:18px;font-family:pixelated !important;text-transform: lowercase;line-height: 1.1em;}
+
+.RichText h1 {font-size:28px;font-family:Abel !important;}
+.RichText h2 {font-size:22px;font-family:Abel !important;}
+.RichText h3 {font-size:16px;font-family:Abel !important;}
+
+module > h2 {
+    font-family:pixelated !important;
+    font-size:21px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    
+}
+nav > wrapper > module > pane > header > strong {
+    /*font-size:30px;*/
+    /*margin-left:5px;*/
+    
+    font-family:var(--NavPaneTitleFontFamily);
+    font-size:var(--NavPaneTitleFontSize);
+}
+
+body {
+    background:url("https://files.gamebanana.com/bitpit/lambda_logo.svg"), #000000 !important;
+    background-attachment:fixed !important;
+    background-position: 100% bottom !important;
+    background-size: 20% !important;
+    background-repeat: no-repeat !important;
+}
+
+#BodyWrapper {
+    font-family:Abel;
+    background:transparent;
+}
+
+#MainContent {
+    margin-top:0px;
+    padding-top:var(--PrimaryNavHeight);
+}
+
+#ResponsibilitiesModule div dl dd ul li {
+    border:none;
+    box-shadow:none;
+}
+
+pane article {
+	background:rgba(255, 84, 0, 0.075);
+}
+
+pane {
+  background:rgba(0, 0, 0, 0.85) !important;
+  backdrop-filter: blur(7px);
+  border:5px solid #ff8400 !important;
+  border-radius:15px;
+}
+
+#PrimaryNav {
+  margin-top: 5px;
+  background:rgba(0, 0, 0, 0.95) !important;
+  /*backdrop-filter: blur(7px);*/
+  border:5px solid #ff8400 !important;
+  border-radius:15px 15px 15px 0px;
+}
+
+#SecondaryNav {
+  background:rgba(0, 0, 0, 0.75) !important;
+  border-radius: 0px 0px 15px 15px;
+  border:5px solid #ff8400 !important;
+}
+
+#SecondaryNav pane {border:none !important;background:transparent !important;}
+
+#SecondaryNav.Expanded {
+  overflow:visible;
+}
+
+:root {
+    --NavUpdatesIndicatorColor:#ff6600;
+
+    --NavPaneBackgroundColor:#00000088;
+
+    --LinkColor:#ff8400; /*#80a0a0*/
+    --LinkHoverColor:#ffcccc;
+
+    --ButtonBackground:#ff8400;
+    --ButtonHoverBackgroundColor:#8f6430; /*cf6430*/
+    --ButtonFontColor:black;
+    --ButtonHoverFontColor:white;
+
+    --PageTitleFontSize:4em;
+    --PageTitleColor:#ff8400;
+
+    --SubNavigatorBorderColor:#00000088;
+    --SubNavigatorActiveTabBorderColor:#ff8400;
+    --SubNavigatorTabHoverBorderColor:white;
+    --SubNavigatorDropdownBackgroundColor:rgba(255, 84, 0, 0.475);
+
+    --InputTextColor: #ffffff;
+    --InputBackgroundColor: rgba(255, 84, 0, 0.075);
+    --InputHoverBackgroundColor: rgba(255, 84, 0, 0.095);
+    --InputFocusBackgroundColor: rgba(255, 84, 0, 0.125);
+    --InputPlaceholderColor: #ffffff88;
+
+    --DefaultTextColor: #fdfdfd;
+    --DefaultBlueColor: #2244ff;
+    --DefaultRedColor: #ff4444;
+    --DefaultRedDarkColor: #f74843;
+    --DefaultGreenColor: #00cc00;
+    --DefaultGreenDarkColor: #5c7e10;
+    --DefaultPurpleColor: #4400ff;
+    --DefaultGreyColor: #c6c6c6;
+    --DefaultOrangeColor: #ff8800;
+    --DefaultYellowColor: #ffff00;
+    --StateLabelBackground: #ff8400/*#55cdd477*/;
+  
+    --MasterLogBackgroundColor: #0e1317;
+    --MasterLogFontSize: 0.9em;
+    --AuxiliaryColumnBackground: transparent;
+    --AuxiliaryColumnBorder: none;
+    --AuxiliaryColumnModuleBorderColor: transparent;
+    
+    --ModuleTitleUnderlineColor:transparent;
+}
+
+.ExtendedContentButton {
+  background: var(--ButtonBackground);
+  color: var(--ButtonFontColor);
+}
+
+.ExtendedContentButton:hover {
+  background: var(--ButtonHoverBackgroundColor);
+  color: var(--ButtonHoverFontColor);
+}
+
+::-webkit-scrollbar {background:transparent;}
+
+::-webkit-scrollbar-track {
+  background-color:#000000;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: #ff6400;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffff88;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: #ffcc00;
+
+
+}::selection {
+  color: black;
+  background: #ff8400;
+}
+
+#GbLogo {
+  filter:hue-rotate(-30deg) !important;
+}
+
+/*partial scrollbar code for Firefox - hamstar*/
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: #ff6400 #000000;
+    /*scrollbar-width: thin;*/
+  }
+}
+
+module.PageModule {
+  background:rgba(255, 84, 0, 0.075);
+  backdrop-filter: blur(10px);
+  border:5px solid #ff8400 !important;
+  border-radius:15px;
+  margin-left:2.5px;
+  margin-right:2.5px;
+}
+
+.PostReplies .PostReplies > .PostsListModule {
+  background:transparent !important;
+  border:none !important;
+}
+
+.PostReplies > .PostsListModule {
+  background:transparent !important;
+}
+
+/*.PostStamps::before {
+  content:"Stamps:";
+}*/
+
+/*.PostStamps {
+  border:2px solid #ff8400 !important;
+  border-radius: 7.5px;
+  background:#000000cc;
+  padding:2px !important;
+}*/
+
+.PostStamps {
+  overflow-x:visible;
+  white-space: nowrap;
+}
+
+.PostStamps li {
+  border:2px solid !important;
+  padding-right:0px !important;
+  padding-left:10px !important;
+  /*transition-timing-function: ease-out;
+  transition-duration: 0.2s;*/
+  width:25px;
+  overflow-x:hidden;
+  white-space: nowrap;
+  /*margin-bottom: 0px !important;*/
+  margin-bottom: .25em !important;
+  margin-top: .25em !important;
+}
+
+.PostStamps li:hover {
+  border:2px solid !important;
+  padding-right:10px !important;
+  padding-left:10px !important;
+  /*transition-timing-function: ease-out;
+  transition-duration: 0.2s;*/
+  width:auto;
+}
+
+.PostStamps li span {
+  /*overflow-x:hidden;
+  white-space: nowrap;
+  width:0px;*/
+  transition-timing-function: ease-out;
+  transition-duration: 0.2s;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.PostStamps li:hover span {
+  /*width:auto;*/
+  /*transition-timing-function: ease-out;
+  transition-duration: 0.2s;*/
+}
+
+#ImportantLinks li a {
+  background:#ff8400 !important;
+  color:black !important;
+}
+
+#ImportantLinks li a:hover {
+  background:black !important;
+}
+
+#ImportantLinks li a:hover span {
+  color:#ff8400 !important;
+}
