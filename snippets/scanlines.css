@@ -1,0 +1,34 @@
+#MainContent::after {
+  content:"";
+  background:url("https://files.gamebanana.com/bitpit/scanline2_aafa8.png");
+  position: fixed;
+  width:100%;
+  height:100%;
+  z-index: 300;
+  top:0;
+  lefT:0;
+  right:0;
+  bottom:0;
+  background-size: 5%;
+  pointer-events: none;
+}
+
+#MainContent::before {
+  content:"";
+  background:rgba(255, 255, 255, 0.05);
+  position: fixed;
+  width:100%;
+  height:20%;
+  z-index: 300;
+  top:0;
+  lefT:0;
+  right:0;
+  bottom:0;
+  pointer-events: none;
+  animation:bm_scanline 15s linear infinite;
+}
+
+@keyframes bm_scanline {
+  0% {top:100%}
+  100% {top:-30%;}
+}
