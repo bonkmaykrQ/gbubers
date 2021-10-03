@@ -1,0 +1,331 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+
+/* Fruitglass       */
+/* by bonkmaykr     */
+/* at bonkmaykr.xyz */
+
+/* IMPORTS - DO NOT REMOVE*/
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/cursor.css");
+
+/* OPTIONAL IMPORTS - YOU MAY ENABLE/DISABLE THESE*/
+/*@import url("https://bonkmaykrq.github.io/gbubers/snippets/scanlines.css");*/
+
+/* VARIABLES */
+:root {
+        --fgPrimaryTextColor:200, 200, 200;
+        --fgSecondaryTextColor:140, 140, 140;
+        --fgAccentContrastTextColor:0, 0, 0; /*used for text selection, etc*/
+        --fgAccentHighlightContrastTextColor:0, 0, 0; /*used for button hovers, etc*/
+        
+        --fgAccentColor:255, 46, 31;
+        --fgAccentHighlight:255, 204, 204;
+        --fgPrimaryColor:0, 0, 0;
+        --fgSecondaryColor:97, 18, 13;
+        --fgNavbarColor:0, 0, 0;
+        --fgModuleOpacity:0.2; /*from 0 to 1 in decimal*/
+        
+        /*Image backgrounds should always be on layer 1.*/
+        /*Layer 2 is used as backup until layer 1 loads.*/
+        --fgBackground1:url("https://files.gamebanana.com/bitpit/thumb-1920-936378.jpg");
+        --fgBackground2:#000000;
+        --fgWrapperBackground:#000000a0;
+        
+        /*Controls the intensity of gaussian blur effects*/
+        /*	!! WARNING !! - Module blurring will heavily reduce the framerate on low-end devices*/
+        /*	If you want performance, set fgModuleBlur to 0px. Effectiveness may vary. */
+        /*	When that doesn't work, feel free to remove the backdrop filter entirely. */
+        --fgUIBlur:7px;
+        --fgModuleBlur:10px;
+
+		/*Sizing Options*/
+		--fgNavbarRadius:15px; /*Setting this too high can cause problems. Try to keep it below 20px*/
+		--fgPrimaryNavbarThickness:5px;
+		--fgPrimaryNavbarPadding:0;
+		--fgPrimaryNavbarMargin:5px;
+		--fgSecondaryNavbarThickness:2px;
+		--fgSecondaryNavbarPadding:0;
+		--fgSecondaryNavbarMargin:10px;
+		--fgModuleRadius:15px;
+		--fgModuleThickness:5px;
+		--fgModulePadding:.5em 1em 1em 1em;
+		--fgModuleMargin:8px 2.5px 0px 2.5px;
+
+		/*Gamebanana built-in settings*/
+    	--DefaultBlueColor: #7777ff;
+    	--DefaultRedColor: #ff7777;
+    	--DefaultRedDarkColor: #ff9977;
+    	--DefaultGreenColor: #77ff77;
+    	--DefaultGreenDarkColor: #99ff77;
+    	--DefaultPurpleColor: #9977ff;
+    	--DefaultGreyColor: rgb(var(--fgSecondaryTextColor));
+    	--DefaultOrangeColor: #ff8800;
+    	--DefaultYellowColor: #ffff00;
+		
+		/*Custom cursors*/
+    	--defaultCursor:        url("https://files.gamebanana.com/bitpit/normal_85f4a.png"),default !important;
+    	--textCursor:   url("https://files.gamebanana.com/bitpit/text_42755.png"),text !important;
+    	--pointerCursor:   url("https://files.gamebanana.com/bitpit/link_b8d24.png"),default !important;
+    	
+		/*Unused variables, caused font loading problems. Feel free to ignore*/
+/*
+		--fgFont:;
+		--fgHeaderFont:;*/
+}
+
+/* MAIN CODE - ADVANCED USERS ONLY */
+@font-face {
+    font-family:Novasquare;
+    src:url(https://files.gamebanana.com/bitpit/novasquare-regular.ttf);
+}
+
+@font-face {
+    font-family:elysian;
+    src:url(https://files.gamebanana.com/bitpit/elysian_fields.otf);
+}
+
+.Notification.Unseen {
+  background:rgba(var(--fgAccentColor), 0.05) !important;
+}
+.Notification, .Notification .Messages > * + * {
+  border-top-color:rgba(255, 255, 255, 0.1) !important;
+}
+
+h1 {font-size:28px;font-family:elysian !important;text-transform: lowercase;line-height: 1.1em;}
+h2 {font-size:24px;font-family:elysian !important;text-transform: lowercase;line-height: 1.1em;}
+h3 {font-size:18px;font-family:elysian !important;text-transform: lowercase;line-height: 1.1em;}
+
+.RichText h1 {font-size:28px;font-family:Novasquare !important;}
+.RichText h2 {font-size:22px;font-family:Novasquare !important;}
+.RichText h3 {font-size:16px;font-family:Novasquare !important;}
+
+module > h2 {
+    font-family:elysian !important;
+    font-size:21px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    
+}
+nav > wrapper > module > pane > header > strong {
+    /*font-size:30px;*/
+    /*margin-left:5px;*/
+    
+    font-family:var(--NavPaneTitleFontFamily);
+    font-size:var(--NavPaneTitleFontSize);
+}
+
+body {
+    background:var(--fgBackground1), var(--fgBackground2);
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#BodyWrapper {
+    font-family:Novasquare;
+    background:var(--fgWrapperBackground);
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#MainContent {
+    margin-top:0px;
+    padding-top:var(--PrimaryNavHeight);
+}
+
+#MainContentWrapper {
+    }
+
+#ResponsibilitiesModule div dl dd ul li {
+    border:none;
+    box-shadow:none;
+}
+
+pane article {
+	background:rgba(var(--fgAccentColor), 0.095);
+}
+
+pane, #MasterLog logs log, #BuddyChatPromoColumn {
+  background:rgba(var(--fgNavbarColor), 0.85) !important;
+  border:var(--fgSecondaryNavbarThickness) solid rgba(var(--fgAccentColor), 1) !important;
+  border-radius:var(--fgNavbarRadius);
+}
+
+#MasterLog logs log {
+  backdrop-filter: blur(var(--fgUIBlur));
+}
+
+#PrimaryNav {
+  margin-top: var(--fgPrimaryNavbarMargin);
+  background:rgba(var(--fgNavbarColor), 0.75) !important;
+  backdrop-filter: blur(var(--fgUIBlur));
+  border:var(--fgPrimaryNavbarThickness) solid rgba(var(--fgAccentColor), 1) !important;
+  border-radius:var(--fgNavbarRadius);
+  padding:var(--fgPrimaryNavbarPadding) !important;
+}
+
+#SecondaryNav {
+  background:rgba(var(--fgNavbarColor), 0.85) !important;
+  border-radius:var(--fgNavbarRadius);
+  margin-top:var(--fgSecondaryNavbarMargin) !important;
+  border:var(--fgSecondaryNavbarThickness) solid rgba(var(--fgAccentColor), 1) !important;
+  overflow:hidden !important;
+  padding:var(--fgSecondaryNavbarPadding) !important;
+}
+
+#SecondaryNav pane {border:none !important;background:transparent !important;}
+
+#SecondaryNav.Expanded {
+  overflow:visible;
+}
+
+:root {
+    --NavUpdatesIndicatorColor:rgba(var(--fgAccentColor), 1);
+
+    --NavPaneBackgroundColor:#00000088;
+
+    --LinkColor:rgba(var(--fgAccentColor), 1);
+    --LinkHoverColor:rgba(var(--fgAccentHighlight), 1);
+
+    --ButtonBackground:rgba(var(--fgAccentColor), 1);
+    --ButtonHoverBackgroundColor:rgba(var(--fgAccentHighlight), 1);
+    --ButtonFontColor:rgba(var(--fgAccentContrastTextColor), 1);
+    --ButtonHoverFontColor:rgba(var(--fgAccentHighlightContrastTextColor), 1);
+
+    --PageTitleFontSize:4em;
+    --PageTitleColor:rgba(var(--fgAccentColor), 1);
+
+    --SubNavigatorBorderColor:rgba(var(--fgSecondaryColor), 0.6);
+    --SubNavigatorActiveTabBorderColor:rgba(var(--fgAccentColor), 1);
+    --SubNavigatorTabHoverBorderColor:rgba(var(--fgAccentHighlight), 1);
+    --SubNavigatorDropdownBackgroundColor:rgba(var(--fgAccentColor), 1);
+
+    --InputTextColor: rgba(var(--fgPrimaryTextColor), 1);
+    --InputBackgroundColor: rgba(var(--fgPrimaryColor), 0.45);
+    --InputHoverBackgroundColor: rgba(var(--fgSecondaryColor), 0.45);
+    --InputFocusBackgroundColor: rgba(var(--fgAccentColor), 0.45);
+    --InputPlaceholderColor: rgba(var(--fgPrimaryTextColor), 0.5);
+
+    --DefaultTextColor: rgba(var(--fgPrimaryTextColor), 1);
+    --StateLabelBackground: rgba(var(--fgAccentColor), 1);
+    
+    --MasterLogFontSize: 0.9em;
+    --AuxiliaryColumnBackground: transparent;
+    --AuxiliaryColumnBorder: none;
+    --AuxiliaryColumnModuleBorderColor: transparent;
+    
+    --ModuleTitleUnderlineColor:transparent;
+}
+
+.ExtendedContentButton {
+  background: var(--ButtonBackground);
+  color: var(--ButtonFontColor);
+}
+
+.ExtendedContentButton:hover {
+  background: var(--ButtonHoverBackgroundColor);
+  color: var(--ButtonHoverFontColor);
+}
+
+::-webkit-scrollbar {background:transparent;}
+
+::-webkit-scrollbar-track {
+  background-color:#000000;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background-color: var(--fgAccentColor);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: calc(rgb(var(--fgAccentColor)) + rgb(70,70,70));
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: rgb(var(--fgAccentContrastTextColor));
+  background: rgba(var(--fgAccentColor), 1);
+
+
+}::selection {
+  color: rgb(var(--fgAccentContrastTextColor));
+  background: rgba(var(--fgAccentColor), 1);
+}
+
+/*partial scrollbar code for Firefox - hamstar*/
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: rgb(var(--fgAccentColor)) rgb(var(--fgPrimaryColor));
+    /*scrollbar-width: thin;*/
+  }
+}
+
+module.PageModule {
+  background:rgba(var(--fgAccentColor), 0.095);
+  backdrop-filter: blur(var(--fgModuleBlur));
+  border:var(--fgModuleThickness) solid rgba(var(--fgAccentColor), 1) !important;
+  border-radius:var(--fgModuleRadius);
+  margin:var(--fgModuleMargin);
+  padding:var(--fgModulePadding);
+}
+
+.PostReplies .PostReplies > .PostsListModule {
+  background:transparent !important;
+  border:none !important;
+}
+
+.PostReplies > .PostsListModule {
+  background:transparent !important;
+}
+
+/*.PostStamps::before {
+  content:"Stamps:";
+}*/
+
+/*.PostStamps {
+  border:2px solid rgba(var(--fgAccentColor), 1) !important;
+  border-radius: 7.5px;
+  background:#000000cc;
+  padding:2px !important;
+}*/
+
+.PostStamps {
+  overflow-x:visible;
+  white-space: nowrap;
+}
+
+.PostStamps li {
+  border:2px solid !important;
+  padding-right:10px !important;
+  padding-left:10px !important;
+  /*transition-timing-function: ease-out;
+  transition-duration: 0.2s;*/
+  /*margin-bottom: 0px !important;*/
+  margin-bottom: .25em !important;
+  margin-top: .25em !important;
+  background:rgba(var(--fgPrimaryColor), 0.5) !important;
+}
+
+#ImportantLinks li a {
+  background:rgba(var(--fgAccentColor), 1) !important;
+  color:rgba(var(--fgAccentContrastTextColor), 1) !important;
+}
+
+#ImportantLinks li a:hover {
+  background:var(--ButtonHoverBackgroundColor) !important;
+}
+
+#ImportantLinks li a:hover span {
+  color:rgba(var(--fgAccentHighlightContrastTextColor), 1) !important;
+}
