@@ -246,7 +246,7 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 }
  
 ::-webkit-scrollbar-thumb {
-  background-color: var(--fgAccentColor);
+  background-color: rgba(var(--fgAccentColor), 1);
 }
 
 ::-webkit-scrollbar-thumb:hover {
