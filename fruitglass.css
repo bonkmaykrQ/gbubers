@@ -329,3 +329,5 @@ module.PageModule {
 #ImportantLinks li a:hover span {
   color:rgba(var(--fgAccentHighlightContrastTextColor), 1) !important;
 }
+
+statelabel, statelabel > a {color:white !important;}
