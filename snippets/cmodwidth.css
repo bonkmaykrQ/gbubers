@@ -1,0 +1,5 @@
+/*custom modules widthfix*/
+.ThirdPartyModule {
+  padding-left:var(--cmodwidth);
+  padding-right:var(--cmodwidth);
+}
