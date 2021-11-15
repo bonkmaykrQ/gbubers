@@ -91,7 +91,7 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 }
 
 #PrimaryNav {
-  margin-top: 5px;
+  top: 5px;
   background:rgba(0, 0, 0, 0.95) !important;
   /*backdrop-filter: blur(7px);*/
   border:5px solid #ff8400 !important;
