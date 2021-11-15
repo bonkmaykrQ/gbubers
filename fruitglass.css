@@ -168,7 +168,7 @@ pane, #MasterLog logs log, #BuddyChatPromoColumn {
 }
 
 #PrimaryNav {
-  margin-top: var(--fgPrimaryNavbarMargin);
+  top: var(--fgPrimaryNavbarMargin);
   background:rgba(var(--fgNavbarColor), 0.75) !important;
   backdrop-filter: blur(var(--fgUIBlur));
   border:var(--fgPrimaryNavbarThickness) solid rgba(var(--fgAccentColor), 1) !important;
