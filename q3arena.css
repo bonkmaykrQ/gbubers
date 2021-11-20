@@ -110,7 +110,12 @@
 
 @font-face {
 	font-family:handel;
-	src:url("https://files.gamebanana.com/bitpit/handel_gothic.ttf");
+	src:url("https://files.gamebanana.com/bitpit/optihandelgothic-light.otf");
+    
+    /*
+    trips malware filter on firefox, mozilla pls fix
+    https://files.gamebanana.com/bitpit/optihandelgothic-light.otf
+    */
 }
 
 b, h1, h2, h3 {
@@ -234,8 +239,9 @@ ul#ImportantLinks li a {color:var(--LinkColor) !important;}
 ul#ImportantLinks li a:hover {color:black !important;background:#ff444499 !important;text-decoration: none !important;}
 /*ul#ImportantLinks li a:hover {color:var(--LinkHoverColor) !important;}*/
 
-img#GbLogo {
-        background:url("https://files.gamebanana.com/bitpit/891.png");
+@media only screen and (min-width : 1001px) {
+a#SiteLogo > img {
+	background:url("https://files.gamebanana.com/bitpit/891.png");
         background-size:200px 48px;
        
         width: 200px;
@@ -244,6 +250,11 @@ img#GbLogo {
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         padding-left: 200px;
+    }#BananaNavModule > widget > a {transition-duration:0s !important;}
+    a#SiteLogo {transition-duration:0s !important;}
+}
+@media only screen and (max-width : 1000px) {
+    
 }
 
 spriteIcon.NavModuleIcon.BananaNavModuleIcon, .SpriteIcon.NavModuleIcon.BananaNavModuleIcon {
@@ -260,3 +271,22 @@ statelabel.IsRipeRelated a{color: #FFFF00;text-shadow: 0 0 0.125em black;}
 statelabel.IsRipeRelated a:hover{color: #FFFF00;text-shadow: 0 0 0.125em black;}
 
 .IsHonorary {color:white !important;background:#ff0000;text-shadow:none;}
+
+#tippy-16, #tippy-8, #tippy-9 {
+    border-top:none !important;
+    background:#3a0000cc;
+    border:1px solid #ff0000;
+    /*backdrop-filter: blur(5px);*/
+}#tippy-16 div.tippy-box, #tippy-8 div.tippy-box, #tippy-9 div.tippy-box
+{transition-duration:0.1s !important;}
+
+#SiteMenuToggle {border:none !important;}
+
+#tippy-8 {max-width:352px;width:100%;min-width:100px;}
+
+#SearchForm > .InputWithButton > input:focus {
+    border:1px solid #ff0000;
+    border-right:none;
+    border-radius: 0px;
+    padding-left:calc(.75em - 1px);
+}
