@@ -134,7 +134,7 @@ body {
     /*border-top:1px solid #ff0000;*/
     border-bottom:1px solid #ff0000;
     margin-top:0px;
-    padding-top:var(--PrimaryNavHeight);
+    /*padding-top:var(--PrimaryNavHeight);*/
 }
 
 #MainContentWrapper {
