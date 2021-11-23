@@ -13,7 +13,7 @@
 @import url("https://bonkmaykrq.github.io/gbubers/snippets/cursor.css");
 @import url("https://bonkmaykrq.github.io/gbubers/snippets/oldalertsdark.css");
 
-module.PageModule.bmSteamAccountDetails {margin-top:7.25px !important;}
+module.PageModule.bmSteamAccountDetails {margin-top:8px !important;}
 
 :root{
 	--NavUpdatesIndicatorColor:#ff0000;
