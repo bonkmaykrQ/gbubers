@@ -273,17 +273,25 @@ statelabel.IsRipeRelated a:hover{color: #FFFF00;text-shadow: 0 0 0.125em black;}
 
 .IsHonorary {color:white !important;background:#ff0000;text-shadow:none;}
 
-#tippy-16, #tippy-8, #tippy-9 {
+/*whichever one of you decided it would be funny
+to add randomized IDs i hope you get fired*/
+body.site-gamebanana > div[id^="tippy-"] {
     border-top:none !important;
     background:#3a0000cc;
     border:1px solid #ff0000;
     /*backdrop-filter: blur(5px);*/
-}#tippy-16 div.tippy-box, #tippy-8 div.tippy-box, #tippy-9 div.tippy-box
+}body.site-gamebanana > div[id^="tippy-"] div.tippy-box
 {transition-duration:0.1s !important;}
 
 #SiteMenuToggle {border:none !important;}
 
-#tippy-8 {max-width:352px;width:100%;min-width:100px;}
+/*There is literally no proper way of doing this anymore because the
+number will just reset itself and i have to keep fucking redoing this part
+again and again. FIX YOUR SHIT
+Mozilla and Google, PLEASE add support for the :has selector
+
+body.site-gamebanana > div[id^="tippy-"]:has(div#SearchSuggestions),*/
+#tippy-6 {max-width:352px;width:100%;min-width:100px;}
 
 #SearchForm > .InputWithButton > input:focus {
     border:1px solid #ff0000;
