@@ -1,0 +1,269 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+
+:root {
+ --DefaultTextFontFamily: "Open Sans", sans-serif;
+ --DefaultTechnicalFontFamily: "IBM Plex Mono", monospace;
+ --DefaultTextColor: #e2e2e2;
+ --DefaultBlueColor: #6CB1E1;
+ --DefaultRedColor: #FF4E4E;
+ --DefaultRedDarkColor: #701E24;
+ --DefaultGreenColor: #6EE16C;
+ --DefaultGreenDarkColor: #344734;
+ --DefaultPurpleColor: #FF5E9D;
+ --DefaultGreyColor: #999999;
+ --DefaultOrangeColor: #FF7238;
+ --DefaultYellowColor: #FFE033;
+ --StateLabelBackground: #1c2024;
+ --LinkColor: #FFE033;
+ --LinkHoverColor: #FD70E1;
+ --BodyBackground: #030a10 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+ --BodyWrapperBackground: #081115 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+ --VisibleHiddenColumnBackground: rgba(19,26,32,0.9) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+ --NavPaneBackgroundColor: #0e1317;
+ --PrimaryNavBottomBorder: 1px solid rgba(0,0,0,0.25);
+ --PrimaryNavBackgroundColor: #181c20;
+ --SecondaryNavBackgroundColor: #181c20/*181c25*/;
+ --SecondaryNavFullWidth: 400px;
+ --SecondaryNavSmallIconOuterWidth: 36px;
+ --SecondaryNavRegularIconOuterWidth: 52px;
+ --NavControlsHeight: 1.5em;
+ --NavUpdatesIndicatorColor: #6CB1E1;
+ --NavPaneTitleFontFamily: "Open Sans", sans-serif;
+ --NavPaneTitleFontSize: 1.5em;
+ --PageTitleFontSize: 3em;
+ --PageTitleFontSize800: 2.5em;
+ --PageTitleFontSize600: 2em;
+ --PageTitleFontSize400: 1.5em;
+ --PageTitleColor: white;
+ --PageDescriptionFontSize: 1rem;
+ --BreadcrumbFontSize: 0.8em;
+ --FixedPageTitleFontSize: 1em;
+ --FixedMainContentHeaderBackground: #151d23 url(data:image/png,base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+ --SubNavigatorFontSize: 1.15em;
+ --SubNavigatorFixedFontSize: 0.8em;
+ --SubNavigatorBackgroundColor: transparent;
+ --SubNavigatorBorderColor: #0e1317;
+ --SubNavigatorActiveTabBackgroundColor: transparent;
+ --SubNavigatorActiveTabFontColor: #6CB1E1;
+ --SubNavigatorActiveTabBorderColor: #6CB1E1;
+ --SubNavigatorDropdownBackgroundColor: #0e1317;
+ --SubNavigatorDropdownFontSize: 0.8em;
+ --SubNavigatorTabHoverBackgroundColor: transparent;
+ --SubNavigatorTabHoverBorderColor: grey;
+ --MasterLogBackgroundColor: #0e1317;
+ --MasterLogFontSize: 0.9em;
+ --AuxiliaryColumnBackground: rgba(255,255,255,0.03);
+ --AuxiliaryColumnBorder: 1px solid rgba(0,0,0,0.25);
+ --AuxiliaryColumnModuleBorderColor: rgba(0,0,0,0.25);
+ --ModuleTitleFontSize: 1.25em;
+ --ModuleTitleFontFamily: "Open Sans", sans-serif;
+ --ModuleTitleUnderlineColor: #707070;
+ --ModuleDescriptionFontSize: 0.8em;
+ --ModuleDescriptionFontColor: #707070;
+ --ModuleBorderColor: rgba(255,255,255,0.05);
+ --InputTitleFontSize: 1.25em;
+ --InputTitleUnderlineColor: #707070;
+ --InputTextColor: #e2e2e2;
+ --InputBackgroundColor: #1a2226;
+ --InputHoverBackgroundColor: #414a4e;
+ --InputFocusBackgroundColor: #414a4e;
+ --InputPlaceholderColor: #9f9f9f;
+ --ButtonFontColor: #bbb;
+ --ButtonBackground: #2c2c2f;
+ --ButtonFontFamily: "Open Sans", sans-serif;
+ --ButtonFontSize: 0.9em;
+ --ButtonHoverFontColor: #e2e2e2;
+ --ButtonHoverBackgroundColor: #3c3c3c;
+ --PaginatorPageNumberBackgroundColor: #0b1013;
+ --AdvancedElementTabsBackgroundColor: transparent;
+ --AdvancedElementTabsBorderColor: #0e1317;
+ --AdvancedElementTabsActiveTabFontColor: #FF5E9D;
+ --ActiveTabBorderColor: #FF5E9D;
+ --ActiveTabBackgroundColor: rgba(255,94,157,0.08);
+ --TableColumnTitleFontColor: #ffffff8a;
+ --TableColumnTitleBackground: #ffffff14;
+ --EmbeddedWindowBackgroundColor: rgba(0,0,0,0.15)
+}
+
+@media only screen and (min-width : 1001px) {
+a#SiteLogo > img {
+	background:url("https://files.gamebanana.com/bitpit/text1552.png");
+        background-size:200px 28px;
+       
+        width: 200px;
+        height: 28px;
+        display:block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 200px;
+    }#BananaNavModule > widget > a {transition-duration:0s !important;}
+    a#SiteLogo {transition-duration:0s !important;}
+}
+@media only screen and (max-width : 1000px) {
+  .NavModuleIcon.BananaNavModuleIcon {
+    background-position: center center !important;
+    background:url("https://files.gamebanana.com/bitpit/obico2.png");
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    width:48px;
+  }
+}
+
+/*old site code + some new enhancements*/
+.avatar,
+.Avatar,
+.Avatar img,
+#IdentityModule.StudioProfileModule div article img,
+#IdentityModule.ClubProfileModule div article img,
+.AffiliatedStudio a img[src^="https://banners.gamebanana.com"] {
+        -ms-interpolation-mode: nearest-neighbor;
+        image-rendering: crisp-edges;
+        image-rendering: pixelated;
+}
+.Upic, [alt="upic"],
+[alt="Flag icon"],
+.AffiliatedStudio img,
+#IdentityModule.StudioProfileModule div article h2 img,
+#IdentityModule.ClubProfileModule div article h2 img,
+.Post .RichText footer img,
+.Links.Studios.PreventBodyScroll li a img,
+.Links.Clubs.PreventBodyScroll li a img{
+-ms-interpolation-mode: nearest-neighbor;
+image-rendering: crisp-edges;
+image-rendering: pixelated;
+}
+/*Snippet by BonkMaykr
+**Public Domain
+*/
+
+:root{
+        --SecondaryNavFullWidth: 470px;
+}
+
+#SecondaryNav {
+        overflow-x: hidden; /*scroll;*/
+}
+.Avatar.IsRipeSupporter{
+        animation:RipeBorderVisor 8s linear infinite;
+}
+
+@keyframes RipeBorderVisor {
+        0% {background:linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba(0,0,255,1) 100%);}
+        10% {background:linear-gradient(90deg, rgba(82,255,0,1) 0%, rgba(252,0,255,1) 100%);}
+        20% {background:linear-gradient(90deg, rgba(244,0,255,1) 0%, rgba(255,0,0,1) 100%);}
+        30% {background:linear-gradient(90deg, rgba(0,249,255,1) 0%, rgba(255,154,0,1) 100%);}
+        40% {background:linear-gradient(90deg, rgba(255,124,0,1) 0%, rgba(18,255,0,1) 100%);}
+        50% {background:linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba(0,0,255,1) 100%);}
+        60% {background:linear-gradient(90deg, rgba(82,255,0,1) 0%, rgba(252,0,255,1) 100%);}
+        70% {background:linear-gradient(90deg, rgba(244,0,255,1) 0%, rgba(255,0,0,1) 100%);}
+        80% {background:linear-gradient(90deg, rgba(0,249,255,1) 0%, rgba(255,154,0,1) 100%);}
+        90% {background:linear-gradient(90deg, rgba(255,124,0,1) 0%, rgba(18,255,0,1) 100%);}
+        100% {background:linear-gradient(90deg, rgba(255,255,0,1) 0%, rgba(0,0,255,1) 100%);}
+}
+/*.BananaTip:not([style*="background"]), .AvatarTooltip:not([style*="background"]) {backdrop-filter: blur(5px);background:rgba(0,0,0,0.4) !important;}*/
+nav#SecondaryNav wrapper module.HasIndicator icon spriteicon,
+nav#SecondaryNav wrapper module.HasUpdates icon spriteicon,
+nav#SecondaryNav wrapper module.HasIndicator icon img,
+nav#SecondaryNav wrapper module.HasUpdates icon img{
+        animation:pulse-7b586 5s linear infinite;
+}
+
+@keyframes pulse-7b586{
+        0%{transform:scale(1);}
+        10%{transform:scale(1.4);}
+        20%{transform:scale(1);}
+        40%{transform:scale(1);}
+        50%{transform:scale(1.4);}
+        60%{transform:scale(1);}
+        100%{transform:scale(1);}
+}
+/*statelabel.IsRipeRelated {
+        border:1px solid white;
+        background: linear-gradient(90deg, rgba(255,0,15,1) 0%, rgba(232,232,0,1) 25%, rgba(0,212,212,1) 50%, rgba(223,0,223,1) 75%, rgba(255,0,17,1) 100%);
+        transform: skewX(-8deg);
+        animation:RipeTagScroll 8s linear infinite;
+}
+
+@keyframes RipeTagScroll {
+        0% {background: rgba(255,0,0,0.6);}
+        16.6% {background: rgba(255,255,0,0.6);}
+        33.3% {background: rgba(0,255,0,0.6);}
+        50.0% {background: rgba(0,255,255,0.6);}
+        66.6% {background: rgba(0,0,255,0.6);}
+        83.3% {background: rgba(255,0,255,0.6);}
+        100% {background: rgba(255,0,0,0.6);}
+}
+statelabel.IsRipeRelated a{color: #FFE033;text-shadow: 0 0 0.125em black;}
+statelabel.IsRipeRelated a:hover{color: #FD70E1;text-shadow: 0 0 0.125em black;}
+*/
+#CoreStatsModule > div.Content > ul {
+        width:100%;
+}
+
+#CoreStatsModule > div.Content {
+        overflow:hidden;
+}
+/*Set --upicHoverShadowColor in your uberstyle to change this.*/
+/*Use !important                                              */
+:root {--upicHoverShadowColor:white;}
+
+a:hover > .Upic, a:focus > .Upic {
+  /*default should be drop-shadow(0 0 2.8px white);*/
+  filter: drop-shadow(0 0 2.8px var(--upicHoverShadowColor));
+}
+#Breadcrumb {
+ font-size:var(--BreadcrumbFontSize);
+ font-weight:bold;
+ padding:.25em .75em;
+ border-radius:1em;
+ align-self:flex-end;
+}
+#Breadcrumb span {
+}
+#Breadcrumb img {display:none;}
+
+#Breadcrumb .RightArrowIcon {width:0px;margin-left:7px;margin-right:12.5px;}
+#Breadcrumb .RightArrowIcon:after {
+  content:"/";
+}
+.OnlineStatus a img {
+        display: none;
+}
+
+recordcell.Status img {
+        display: none;
+}
+
+div.Content > dd > a > img {
+    display: none!important;
+    /*for now it works, but may make ALL images of the same structure (dd a img) dissapear.*/
+}
+
+@media only screen and (min-width : 1001px) {
+h1#PageTitle {
+    font-size:0px !important;
+    /*width:auto;
+    height:160px;*/
+    width:100%;
+    height:100px;
+    background:url(https://files.gamebanana.com/bitpit/text1552.png);
+    background-size: auto 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+}
+@media only screen and (max-width : 1000px) {
+  h1#PageTitle {content:url(https://files.gamebanana.com/bitpit/text1552.png);width:60%;}
+}
+
+span#PageDescription {display:none !important;}
