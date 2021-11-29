@@ -1,0 +1,134 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+
+/* Fruitglass Importer */
+/* by bonkmaykr        */
+/* at bonkmaykr.xyz    */
+/*                     */
+/* Template: Titanfall */
+
+/* IMPORTS - DO NOT REMOVE*/
+@import url("https://bonkmaykrq.github.io/gbubers/fruitglass.css");
+
+/* OPTIONAL IMPORTS - YOU MAY ENABLE/DISABLE THESE*/
+@import url("https://bonkmaykrq.github.io/gbubers/snippets/scanlines.css");
+
+/* VARIABLES */
+:root {
+        --fgPrimaryTextColor:200, 200, 200;
+        --fgSecondaryTextColor:140, 140, 140;
+        --fgAccentContrastTextColor:0, 0, 0; /*used for text selection, etc*/
+        --fgAccentHighlightContrastTextColor:0, 0, 0; /*used for button hovers, etc*/
+        
+        --fgAccentColor:10, 155, 153;
+        --fgAccentHighlight:113, 255, 255;
+        --fgPrimaryColor:10, 115, 153;
+        --fgSecondaryColor:2, 40, 75;
+        --fgNavbarColor:10, 75, 103;/*--fgNavbarColor:10, 75, 123;*/
+        --fgModuleOpacity:0.7; /*0.5*/
+        
+        /*Image backgrounds should always be on layer 1.*/
+        /*Layer 2 is used as backup until layer 1 loads.*/
+        --fgBackground1:url("https://files.gamebanana.com/bitpit/74-743763_titanfall-2-jack-cooper.png");
+        --fgBackground2:#050100;
+        --fgWrapperBackground:#00405000;
+        
+        /*Controls the intensity of gaussian blur effects*/
+        /*	!! WARNING !! - Module blurring will heavily reduce the framerate on low-end devices*/
+        /*	If you want performance, set fgModuleBlur to 0px. Effectiveness may vary. */
+        /*	When that doesn't work, feel free to remove the backdrop filter entirely. */
+        --fgUIBlur:7px;
+        --fgModuleBlur:10px;
+
+		/*Sizing Options*/
+		--fgNavbarRadius:12px; /*Setting this too high can cause problems. Try to keep it below 20px*/
+		--fgPrimaryNavbarThickness:2px;
+		--fgPrimaryNavbarPadding:0;
+		--fgPrimaryNavbarMargin:3.5px;
+		--fgSecondaryNavbarThickness:2px;
+		--fgSecondaryNavbarPadding:0;
+		--fgSecondaryNavbarMargin:10px;
+		--fgModuleRadius:12px;
+		--fgModuleThickness:1px;
+		--fgModulePadding:.5em 1em 1em 1em;
+		--fgModuleMargin:8px 2.5px 0px 2.5px;
+
+		/*Gamebanana built-in settings*/
+    	--DefaultBlueColor: #7777ff;
+    	--DefaultRedColor: #ff7777;
+    	--DefaultRedDarkColor: #ff9977;
+    	--DefaultGreenColor: #77ff77;
+    	--DefaultGreenDarkColor: #99ff77;
+    	--DefaultPurpleColor: #9977ff;
+    	--DefaultGreyColor: rgb(var(--fgSecondaryTextColor));
+    	--DefaultOrangeColor: #ff8800;
+    	--DefaultYellowColor: #ffff00;
+		
+		/*Custom cursors*/
+    	--defaultCursor:        url("https://files.gamebanana.com/bitpit/normal_85f4a.png"),default !important;
+    	--textCursor:   url("https://files.gamebanana.com/bitpit/text_42755.png"),text !important;
+    	--pointerCursor:   url("https://files.gamebanana.com/bitpit/link_b8d24.png"),default !important;
+    	
+		/*Unused variables, caused font loading problems. Feel free to ignore*/
+/*
+		--fgFont:;
+		--fgHeaderFont:;*/
+}
+
+/*custom*/
+:root {
+	--NavPaneTitleFontFamily:Sansation;
+}
+
+@font-face {
+    font-family:Transrobotics;
+    src:url(https://files.gamebanana.com/bitpit/sftransrobotics.ttf);
+}
+
+@font-face {
+    font-family:Sansation;
+    src:url(https://files.gamebanana.com/bitpit/sansation_bold_fd334.ttf);
+}
+
+@font-face {
+    font-family:Exo2;
+    src:url(https://files.gamebanana.com/bitpit/exo2-variablefont_wght.ttf);
+}
+
+h1, h2, h3, module > h2 {font-family:Transrobotics !important;}
+.RichText h1, .RichText h2, .RichText h3 {font-family:Exo2 !important;}
+#BodyWrapper {font-family:Exo2;}
+
+@media only screen and (min-width : 1001px) {
+a#SiteLogo > img {
+        background:url("https://files.gamebanana.com/bitpit/5878531649e31dd68c52529e00059976.png");
+        background-size:230px 42px;
+       
+        width: 230px;
+        height: 42px;
+        display:block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 230px;
+    }#BananaNavModule > widget > a {filter:none !important;}
+    a#SiteLogo {filter:none !important;}
+}
+@media only screen and (max-width : 1000px) {
+    
+}
+
+nav a {
+  color:#20ffff !important;
+}
+nav a:hover {
+  color:#ccffff !important;
+}
