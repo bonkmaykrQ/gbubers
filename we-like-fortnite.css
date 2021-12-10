@@ -1,0 +1,158 @@
+/*  This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+    */
+
+/* Fruitglass Importer */
+/* by bonkmaykr        */
+/* at bonkmaykr.xyz    */
+/*                     */
+/* Template: FORTNITE!!!!!!!!! YEAAAHHHHHHHHHHHHHHHHHH */
+
+/* IMPORTS - DO NOT REMOVE*/
+@import url("https://bonkmaykrq.github.io/gbubers/fruitglass.css");
+
+/* OPTIONAL IMPORTS - YOU MAY ENABLE/DISABLE THESE*/
+/*@import url("https://bonkmaykrq.github.io/gbubers/snippets/scanlines.css");*/
+
+/* VARIABLES */
+:root {
+        --fgPrimaryTextColor:255, 255, 255;
+        --fgSecondaryTextColor:140, 140, 140;
+        --fgAccentContrastTextColor:255, 255, 255; /*used for text selection, etc*/
+        --fgAccentHighlightContrastTextColor:0, 200, 255; /*used for button hovers, etc*/
+        
+        --fgAccentColor:0, 160, 255;
+        --fgAccentHighlight:113, 255, 255;
+        --fgPrimaryColor:0, 10, 10;
+        --fgSecondaryColor:250, 220, 0;
+        --fgNavbarColor:20, 50, 90;/*--fgNavbarColor:10, 75, 123;*/
+        --fgModuleOpacity:0.5; /*0.5*/
+        
+        /*Image backgrounds should always be on layer 1.*/
+        /*Layer 2 is used as backup until layer 1 loads.*/
+        --fgBackground1:url("https://files.gamebanana.com/bitpit/we-like-fortnite-we-like-fortnite.jpg");
+        --fgBackground2:#050100;
+        --fgWrapperBackground:#00405000;
+        
+        /*Controls the intensity of gaussian blur effects*/
+        /*	!! WARNING !! - Module blurring will heavily reduce the framerate on low-end devices*/
+        /*	If you want performance, set fgModuleBlur to 0px. Effectiveness may vary. */
+        /*	When that doesn't work, feel free to remove the backdrop filter entirely. */
+        --fgUIBlur:5px;
+        --fgModuleBlur:5px;
+
+		/*Sizing Options*/
+		--fgNavbarRadius:0px; /*Setting this too high can cause problems. Try to keep it below 20px*/
+		--fgPrimaryNavbarThickness:1px;
+		--fgPrimaryNavbarPadding:0;
+		--fgPrimaryNavbarMargin:3.5px;
+		--fgSecondaryNavbarThickness:1px;
+		--fgSecondaryNavbarPadding:0;
+		--fgSecondaryNavbarMargin:10px;
+		--fgModuleRadius:5px;
+		--fgModuleThickness:0px;
+		--fgModulePadding:.5em 1em 1em 1em;
+		--fgModuleMargin:8px 2.5px 0px 2.5px;
+
+		/*Gamebanana built-in settings*/
+    	--DefaultBlueColor: #7777ff;
+    	--DefaultRedColor: #ff7777;
+    	--DefaultRedDarkColor: #ff9977;
+    	--DefaultGreenColor: #77ff77;
+    	--DefaultGreenDarkColor: #99ff77;
+    	--DefaultPurpleColor: #9977ff;
+    	--DefaultGreyColor: rgb(var(--fgSecondaryTextColor));
+    	--DefaultOrangeColor: #ff8800;
+    	--DefaultYellowColor: #ffff00;
+		
+		/*Custom cursors*/
+    	--defaultCursor:        url("https://files.gamebanana.com/bitpit/fortnite_lama_da259.cur"),default !important;
+    	--textCursor:   url("https://files.gamebanana.com/bitpit/fortnite_lama_da259.cur"),text !important;
+    	--pointerCursor:   url("https://files.gamebanana.com/bitpit/fortnite_lama_da259.cur"),default !important;
+    	
+		/*Unused variables, caused font loading problems. Feel free to ignore*/
+/*
+		--fgFont:;
+		--fgHeaderFont:;*/
+}
+
+/*custom*/
+:root {
+	--NavPaneTitleFontFamily:Sansation;
+}
+
+@font-face {
+    font-family:Fortnite;
+    src:url(https://files.gamebanana.com/bitpit/fortnite.otf);
+}
+
+@font-face {
+    font-family:Sansation;
+    src:url(https://files.gamebanana.com/bitpit/sansation_bold_fd334.ttf);
+}
+
+@font-face {
+    font-family:Exo2;
+    src:url(https://files.gamebanana.com/bitpit/exo2-variablefont_wght.ttf);
+}
+
+h1, h2, h3, module > h2, #ImportantLinks {font-family:Fortnite !important;text-transform:capitalize;
+    text-shadow:2px 2px 0px black;}
+.RichText h1, .RichText h2, .RichText h3 {font-family:Fortnite !important;
+    text-shadow:2px 2px 0px black;}
+#BodyWrapper {font-family:Exo2;}
+
+@media only screen and (min-width : 1001px) {
+a#SiteLogo > img {
+        background:url("https://files.gamebanana.com/bitpit/g20.png");
+        background-size:180px 40px;
+        background-position:center;
+       
+        width: 180px;
+        height: 40px;
+        display:block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 180px;
+  
+  /*
+        background:url("https://files.gamebanana.com/bitpit/fortnite_png25.png");
+        background-size:230px 100px;
+        background-position:center;
+       
+        width: 200px;
+        height: 55px;
+        display:block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 200px;*/
+    }#BananaNavModule > widget > a {filter:none !important;}
+    a#SiteLogo {filter:none !important;}
+}
+@media only screen and (max-width : 1000px) {
+    
+}
+
+nav a {
+  color:#20ffff !important;
+}
+nav a:hover {
+  color:#ccffff !important;
+}
+
+module.PageModule, pane article {
+	background:rgba(var(--fgPrimaryColor), var(--fgModuleOpacity));
+}
+
+#PageTitle {
+    color:white;
+    text-shadow:3px 3px 0px black;
+}
