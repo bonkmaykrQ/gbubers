@@ -321,7 +321,7 @@ h1, h2, h3 {
   margin-left: -1.05em !important;
 }
 
-.recordLol recordcell dd {
+.recordLol recordcell dd, .recordLolPulls recordcell dd {
   margin: -7px 0 0 0em !important;
 }
 
