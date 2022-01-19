@@ -10,8 +10,33 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
     */
 
+@font-face {
+	font-family:rusq;
+	src:url("https://bonkmaykr.xyz/oldbanana/assets/fonts/rusq.ttf");
+}
+
+@font-face {
+	font-family:elysian;
+	src:url("https://bonkmaykr.xyz/oldbanana/assets/fonts/Elysian Fields.otf");
+}
+
+@font-face {
+	font-family:handel;
+	src:url("https://bonkmaykr.xyz/oldbanana/assets/fonts/handel_gothic_web.ttf");
+}
+
+@font-face {
+	font-family:helveticaneue;
+	src:url("https://bonkmaykr.xyz/oldbanana/assets/fonts/helveticaneue_medium.ttf");
+}
+
+@font-face {
+	font-family:bahnschrift;
+	src:url("https://bonkmaykr.xyz/oldbanana/assets/fonts/bahnschrift.ttf");
+}
+
 :root {
- --DefaultTextFontFamily: "Open Sans", sans-serif;
+ --DefaultTextFontFamily: bahnschrift, "Open Sans", sans-serif;
  --DefaultTechnicalFontFamily: "IBM Plex Mono", monospace;
  --DefaultTextColor: #e2e2e2;
  --DefaultBlueColor: #6CB1E1;
@@ -27,18 +52,18 @@
  --LinkColor: #FFE033;
  --LinkHoverColor: #FD70E1;
  --BodyBackground: #030a10 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
- --BodyWrapperBackground: #081115 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
+ --BodyWrapperBackground: url(https://cdn.discordapp.com/attachments/699015866519650377/933398608420679810/code-y.png);
  --VisibleHiddenColumnBackground: rgba(19,26,32,0.9) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAHElEQVQoU2NkIA5IMhKnjmFUId6AAgePJDFhCQDDFAEFiQDatQAAAABJRU5ErkJggg==);
  --NavPaneBackgroundColor: #0e1317;
  --PrimaryNavBottomBorder: 1px solid rgba(0,0,0,0.25);
- --PrimaryNavBackgroundColor: #181c20;
- --SecondaryNavBackgroundColor: #181c20/*181c25*/;
+ --PrimaryNavBackgroundColor: #181c24;
+ --SecondaryNavBackgroundColor: #181c24;
  --SecondaryNavFullWidth: 400px;
  --SecondaryNavSmallIconOuterWidth: 36px;
  --SecondaryNavRegularIconOuterWidth: 52px;
  --NavControlsHeight: 1.5em;
  --NavUpdatesIndicatorColor: #6CB1E1;
- --NavPaneTitleFontFamily: "Open Sans", sans-serif;
+ --NavPaneTitleFontFamily: rusq, "Open Sans", sans-serif;
  --NavPaneTitleFontSize: 1.5em;
  --PageTitleFontSize: 3em;
  --PageTitleFontSize800: 2.5em;
@@ -52,7 +77,7 @@
  --SubNavigatorFontSize: 1.15em;
  --SubNavigatorFixedFontSize: 0.8em;
  --SubNavigatorBackgroundColor: transparent;
- --SubNavigatorBorderColor: #0e1317;
+ --SubNavigatorBorderColor: rgba(255,255,255,0.05);
  --SubNavigatorActiveTabBackgroundColor: transparent;
  --SubNavigatorActiveTabFontColor: #6CB1E1;
  --SubNavigatorActiveTabBorderColor: #6CB1E1;
@@ -62,12 +87,12 @@
  --SubNavigatorTabHoverBorderColor: grey;
  --MasterLogBackgroundColor: #0e1317;
  --MasterLogFontSize: 0.9em;
- --AuxiliaryColumnBackground: rgba(255,255,255,0.03);
- --AuxiliaryColumnBorder: 1px solid rgba(0,0,0,0.25);
- --AuxiliaryColumnModuleBorderColor: rgba(0,0,0,0.25);
- --ModuleTitleFontSize: 1.25em;
- --ModuleTitleFontFamily: "Open Sans", sans-serif;
- --ModuleTitleUnderlineColor: #707070;
+ --AuxiliaryColumnBackground: rgba(255,255,255,0.00);
+ --AuxiliaryColumnBorder: 1px solid rgba(255,255,255,0.05);
+ --AuxiliaryColumnModuleBorderColor: rgba(255,255,255,0.05);
+ --ModuleTitleFontSize: 1.7em;
+ --ModuleTitleFontFamily: rusq, "Open Sans", sans-serif;
+ --ModuleTitleUnderlineColor: #aaaaaa77;
  --ModuleDescriptionFontSize: 0.8em;
  --ModuleDescriptionFontColor: #707070;
  --ModuleBorderColor: rgba(255,255,255,0.05);
@@ -267,3 +292,27 @@ h1#PageTitle {
 }
 
 span#PageDescription {display:none !important;}
+
+h1, h2, h3 {
+        font-family:helveticaneue;
+}
+
+#HeadlineWrapper {
+	background:url("https://bonkmaykr.xyz/oldbanana/assets/images/obintro.png");
+	background-size:cover;
+	background-position: center;
+	background-attachment: fixed;
+        box-shadow:0px 0px 20px black inset, 0px 0px 50px black inset, 0px 0px 100px black inset;
+        border-radius:0px 0px 20px 20px;
+}
+
+/*nav {box-shadow: 0px 0px 6px black, 0px 0px 15px black, 0px 0px 6px black;}*/
+
+#BodyWrapper {background-size:cover;background-position:center;background-attachment:fixed;}
+#MainContentWrapper {
+        background:#030a1088;
+        padding-left:20px;
+        padding-right:20px;
+}
+
+#PageFooter {background:#181c24;}
