@@ -316,3 +316,11 @@ h1, h2, h3 {
 }
 
 #PageFooter {background:#181c24;}
+
+.recordLol recordcell h2 a {
+  margin-left: -1.05em !important;
+}
+
+.recordLol recordcell dd {
+  margin: -7px 0 0 0em !important;
+}
