@@ -327,3 +327,22 @@ h1, h2, h3 {
 
 /*#RepoPreviewListModule > h2 > a {font-size:0px;}
 #RepoPreviewListModule > h2::before {content:"Commits";font-size:var(--ModuleTitleFontSize);user-select:all;}*/
+
+.recordLolPulls > ul.PostStamps > li {
+        background:#1c272e;
+        margin:5px;
+        border-radius: 5px;
+        border-bottom: 2px solid var(--DefaultGreyColor);
+}
+.recordLolPulls > ul.PostStamps > li[data-_scategory="positive"] {
+        border-bottom: 2px solid var(--DefaultGreenColor);
+}
+.recordLolPulls > ul.PostStamps > li[data-_scategory="negative"] {
+        border-bottom: 2px solid var(--DefaultRedColor);
+}
+
+.recordLolPulls > ul.PostStamps > li > span {
+        word-wrap:none;
+        word-break:keep-all;
+        white-space: nowrap;
+}
