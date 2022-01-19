@@ -90,7 +90,7 @@
  --AuxiliaryColumnBackground: rgba(255,255,255,0.00);
  --AuxiliaryColumnBorder: 1px solid rgba(255,255,255,0.05);
  --AuxiliaryColumnModuleBorderColor: rgba(255,255,255,0.05);
- --ModuleTitleFontSize: 1.7em;
+ --ModuleTitleFontSize: 27px;
  --ModuleTitleFontFamily: rusq, "Open Sans", sans-serif;
  --ModuleTitleUnderlineColor: #aaaaaa77;
  --ModuleDescriptionFontSize: 0.8em;
@@ -324,3 +324,6 @@ h1, h2, h3 {
 .recordLol recordcell dd {
   margin: -7px 0 0 0em !important;
 }
+
+/*#RepoPreviewListModule > h2 > a {font-size:0px;}
+#RepoPreviewListModule > h2::before {content:"Commits";font-size:var(--ModuleTitleFontSize);user-select:all;}*/
