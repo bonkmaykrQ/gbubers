@@ -122,7 +122,7 @@
 
 @media only screen and (min-width : 1001px) {
 a#SiteLogo > img {
-	background:url("https://files.gamebanana.com/bitpit/text1552.png");
+	background:url("https://files.gamebanana.com/bitpit/ob-modern-min.png");
         background-size:200px 28px;
        
         width: 200px;
@@ -137,7 +137,7 @@ a#SiteLogo > img {
 @media only screen and (max-width : 1000px) {
   .NavModuleIcon.BananaNavModuleIcon {
     background-position: center center !important;
-    background:url("https://files.gamebanana.com/bitpit/obico2.png");
+    background:url("https://files.gamebanana.com/bitpit/ob-modern-icon.png");
     background-size:100% auto;
     background-repeat: no-repeat;
     width:48px;
@@ -281,14 +281,14 @@ h1#PageTitle {
     height:160px;*/
     width:100%;
     height:100px;
-    background:url(https://files.gamebanana.com/bitpit/text1552neue.png);
+    background:url(https://files.gamebanana.com/bitpit/ob-modern_a4f27.png);
     background-size: auto 100px;
     background-position: center;
     background-repeat: no-repeat;
 }
 }
 @media only screen and (max-width : 1000px) {
-  h1#PageTitle {content:url(https://files.gamebanana.com/bitpit/text1552.png);width:60%;}
+  h1#PageTitle {content:url(https://files.gamebanana.com/bitpit/ob-modern-min.png);width:60%;}
 }
 
 span#PageDescription {display:none !important;}
