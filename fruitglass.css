@@ -147,6 +147,7 @@ body {
 
 #MainContentWrapper {
     }
+wrapper#BodyWrapper {--BodyWrapperBackground:transparent;}
 
 #ResponsibilitiesModule div dl dd ul li {
     border:none;
