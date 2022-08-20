@@ -88,3 +88,5 @@ button:hover {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(0deg, rgba(61,92,61,1) 0%, rgba(172,207,169,1) 100%);
 }
+
+wrapper#BodyWrapper {--BodyWrapperBackground:transparent;}
