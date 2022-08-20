@@ -237,3 +237,5 @@ body{
 wrapper#BodyWrapper{
     background:transparent;
 }
+
+wrapper#BodyWrapper {--BodyWrapperBackground:transparent;}
