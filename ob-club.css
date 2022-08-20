@@ -312,9 +312,9 @@ h1, h2, h3 {
         background:#030a1088;
         padding-left:20px;
         padding-right:20px;
-	background-size:cover;
-	background-position:center;
-	background-attachment:fixed;
+}
+#MainContent {
+background-size:cover;background-position:center;background-attachment:fixed;
 }
 
 #PageFooter {background:#181c24;}
