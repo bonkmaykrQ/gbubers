@@ -166,3 +166,5 @@ module#IdentityModule div.Content {
   margin-top:0px;
   padding-top:var(--PrimaryNavHeight);
 }
+
+wrapper#BodyWrapper {--BodyWrapperBackground:transparent;}
