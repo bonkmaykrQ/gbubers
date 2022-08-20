@@ -156,3 +156,5 @@ img#GbLogo::after{
 	  height: 45px;
   }
 }*/
+
+wrapper#BodyWrapper {--BodyWrapperBackground:transparent;}
