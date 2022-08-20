@@ -170,3 +170,5 @@ pane {background:linear-gradient(0deg, #22222244 40%, #000000cc 100%), repeating
     /*scrollbar-width: thin;*/
   }
 }
+
+wrapper#BodyWrapper {--BodyWrapperBackground:transparent;}
